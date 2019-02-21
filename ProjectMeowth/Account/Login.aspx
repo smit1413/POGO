@@ -44,6 +44,12 @@
                             <asp:Button runat="server" OnClick="LogIn" Text="Log in" CssClass="btn btn-default" />
                         </div>
                     </div>
+
+                    <div ID="LoginAnimation">
+                        <!-- Credit to https://whatpixel.com/pure-html-css-pokemon/ -->
+                        <div id="Pikachu"></div>
+                        <div id="Ash"></div>
+                    </div>
                 </div>
                 <p>
                     <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Register as a new user</asp:HyperLink>
