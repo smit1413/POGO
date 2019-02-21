@@ -45,7 +45,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Project Meowth</a>
+                    <a class="navbar-brand" runat="server" href="~/"><span ID="logo"><span class="pokemon"><i></i> </span> </span>Project Meowth</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
