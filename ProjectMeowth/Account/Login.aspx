@@ -31,6 +31,11 @@
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="text-danger" ErrorMessage="The password field is required." />
                         </div>
                     </div>
+                    <div ID="LoginAnimation">
+                        <!-- Credit to https://whatpixel.com/pure-html-css-pokemon/ -->
+                        <div id="pikachu"></div>
+                        <div id="ash"></div>
+                    </div>
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-10">
                             <div class="checkbox">
@@ -43,12 +48,6 @@
                         <div class="col-md-offset-2 col-md-10">
                             <asp:Button runat="server" OnClick="LogIn" Text="Log in" CssClass="btn btn-default" />
                         </div>
-                    </div>
-
-                    <div ID="LoginAnimation">
-                        <!-- Credit to https://whatpixel.com/pure-html-css-pokemon/ -->
-                        <div id="Pikachu"></div>
-                        <div id="Ash"></div>
                     </div>
                 </div>
                 <p>
