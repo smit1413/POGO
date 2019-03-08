@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %>Project Meowth</title>
+    <title><%: Page.Title %> | POGO Gakkō</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -45,7 +45,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/"><span ID="logo"><span class="pokemon"><i></i> </span> </span>Project Meowth</a>
+                    <a class="navbar-brand" runat="server" href="~/"><span ID="logo"><span class="pokemon"><i></i> </span> </span>POGO Gakkō</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
