@@ -43,7 +43,9 @@ namespace ProjectMeowth
                 div.InnerText = x.Name;
                 */
                 HtmlImage img = new HtmlImage();
-                img.Src = "/Content/img/150.png";
+                //img.Src = "/Content/img/150.png";
+                img.Src = "/Content/img/pokemon/" + x.SpeciesID + ".png";
+
                 /*
                 div.Controls.Add(img);
                 PokedexGrid.Controls.Add(div);
