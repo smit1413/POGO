@@ -181,6 +181,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\150.png" />
     <Content Include="Content\pokeStyles.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
@@ -364,6 +365,8 @@
       <DependentUpon>Leaderboards.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\PokedexFakeGenerator.cs" />
+    <Compile Include="Models\PokemonModel.cs" />
     <Compile Include="MyProfile.aspx.cs">
       <DependentUpon>MyProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -12,32 +12,47 @@
     <h3>You have reached the - <%: Title %> page.</h3>
     <div class="container">
         <div id="btnFilters">
-            <div class="button-group filter-button-group" data-filter-group="region">
+            <div class="btn-group btn-group-sm button-group filter-button-group" data-filter-group="region">
 
                 <!-- NOTE: You must NOT use the button tag here, since it triggers a postback in ASP.NET & resets the filter -->
-                <input type="button" class="btn btn-info" data-filter="*" value="Show All" />
-                <input type="button" class="btn btn-info" data-filter=".region-kanto" value="Generation 1 - Kanto" />
-                <input type="button" class="btn btn-info" data-filter=".region-johto" value="Generation 2 - Johto" />
-                <input type="button" class="btn btn-info" data-filter=".region-hoenn" value="Generation 3 - Hoenn" />
-                <input type="button" class="btn btn-info" data-filter=".region-sinnoh" value="Generation 4 - Sinnoh" />
+                <input type="button" class="btn btn-success" data-filter="*" value="Show All" />
+                <input type="button" class="btn btn-success" data-filter=".Generation-1" value="Generation 1 - Kanto" />
+                <input type="button" class="btn btn-success" data-filter=".Generation-2" value="Generation 2 - Johto" />
+                <input type="button" class="btn btn-success" data-filter=".Generation-3" value="Generation 3 - Hoenn" />
+                <input type="button" class="btn btn-success" data-filter=".Generation-4" value="Generation 4 - Sinnoh" />
             </div>
 
-            <div class="button-group" data-filter-group="type">
+            <div style="padding-top: 1%"></div>
+
+            <div class="btn-group btn-grou-sm button-group" data-filter-group="type">
 
                 <!-- NOTE: You must NOT use the button tag here, since it triggers a postback in ASP.NET & resets the filter -->
                 <input type="button" class="btn btn-info" data-filter="*" value="Show All" />
-                <input type="button" class="btn btn-info" data-filter=".type-none" value="None" />
-                <input type="button" class="btn btn-info" data-filter=".type-fighting" value="Fighting" />
-                <input type="button" class="btn btn-info" data-filter=".type-dragon" value="Dragon" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Normal" value = "Normal" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Fighting" value = "Fighting" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Flying" value = "Flying" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Poison" value = "Poison" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Ground" value = "Ground" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Rock" value = "Rock" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Bug" value = "Bug" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Ghost" value = "Ghost" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Steel" value = "Steel" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Fire" value = "Fire" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Water" value = "Water" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Grass" value = "Grass" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Electric" value = "Electric" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Psychic" value = "Psychic" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Ice" value = "Ice" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Dragon" value = "Dragon" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Dark" value = "Dark" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Fairy" value = "Fairy" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Unknown" value = "Unknown" />
+                <input type="button" class="btn btn-info" data-filter=".PokemonType-Shadow" value = "Shadow" />
             </div>
         </div>
 
-        <div class="grid">
-            <div class="grid-item region-johto type-none">A</div>
-            <div class="grid-item grid-item--width2 region-kanto type-dragon">B</div>
-            <div class="grid-item region-johto type-dragon">C</div>
-            <div class="grid-item region-kanto type-none">D</div>
-            <div class="grid-item region-johto type-none">E</div>
+        <div id="PokedexGrid" class="grid" runat="server">
+            
         </div>
     </div>
 
