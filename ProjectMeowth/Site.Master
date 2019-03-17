@@ -12,7 +12,7 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/POGOGAKKO.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
 <body>
@@ -49,18 +49,17 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/Pokedex">Pokédex</a></li>
-                        <li><a runat="server" href="~/Trades">Trades</a></li>
-                        <li><a runat="server" href="~/Raids">Raids</a></li>
-                        <li><a runat="server" href="~/Leaderboards">Leaderboards</a></li>
-                        <li><a runat="server" href="~/MyProfile">Profile</a></li>
+                        
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Register</a></li>
-                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                                <li><a runat="server" href="~/">Home</a></li>
+                                <li><a runat="server" href="~/Pokedex">Pokédex</a></li>
+                                <li><a runat="server" href="~/Trades">Trades</a></li>
+                                <li><a runat="server" href="~/Raids">Raids</a></li>
+                                <li><a runat="server" href="~/Leaderboards">Leaderboards</a></li>
+                                <li><a runat="server" href="~/MyProfile">Profile</a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
