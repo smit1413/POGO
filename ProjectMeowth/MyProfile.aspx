@@ -4,8 +4,8 @@
     <asp:Panel ID="unauthorizedUser" runat="server" Visible="true">
         <h2>Please Log in, or Register</h2>
         <li>
-            <ul><a>Log In</a></ul>
-            <ul><a>Register</a></ul>
+            <ul><a href="Account/Login.aspx">Log In</a></ul>
+            <ul><a href="Account/Register.aspx">Register</a></ul>
         </li>
     </asp:Panel>
     <asp:Panel ID="loginUser" runat="server" Visible="false">
