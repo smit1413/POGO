@@ -16,14 +16,14 @@
         #player{
             border-style:solid;
             padding-left: 5px;
-            background-color:#7FDBFF;
+            background-color: white;
             padding-bottom: 10px;
             padding-right:5px;
         }
         #posts{
             border-style:solid;
             padding-left: 5px;
-            background-color:#7FDBFF;
+           background-color: white;
             padding-right:5px;
 
         }
@@ -58,8 +58,10 @@ Sed aliquet dictum tristique. Quisque vsverra nibh non exaporta, maximus lacinia
                
                <tr style="height: 250px;">
                    <td id="posts" style="vertical-align: top; text-align: center;">
-                       <h3>Latest Posts</h3>
-                       <p> Sed aliquet dictum tristique. Quisque viverra nibh non ex porta, maximus lacinia arcu ornare. Nulla nisl tortor, bibendum volutpat pretium eu, sodales sit amet nisl. Etiam vehicula turpis a pellentesque sagittis. Vivamus commodo, ante dignissim tincSed aliquet dictum tristique. Quisque viverra nibh non ex porta, maximus lacinia arcu ornare. Nulla nisl tortor, bibendum volutpat pretium eu, sodales sit amet nisl. Etiam vehicula turpis a pellentesque sagittis. Vivamus commodo, ante dignissim tincSed aliquet dictum tristique. Quisque viverra nibh non ex porta, maximus lacinia arcu ornare. Nulla nisl tortor, bibendum volutpat pretium eu, sodales sit amet nisl. Etiam vehicula turpis a pellentesque sagittis. Vivamus commodo, ante dignissim tinc</p>
+                       <h3>Pokemon Go Updates </h3>
+                       <p> <a class="twitter-timeline" href="https://twitter.com/PokemonGoNews" data-widget-id="661486332787580928"  data-screen-name="VibrantGujarat" width="350" height="400" data-chrome="noborders">
+		Tweets by @https://twitter.com/PokemonGoNews</a>
+         <script async defer>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>  
                    </td></tr>
     </table>
 
