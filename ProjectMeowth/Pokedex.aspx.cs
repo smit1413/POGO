@@ -36,12 +36,17 @@ namespace ProjectMeowth
                 img.Attributes.Add("data-speciesid", "SpeciesID-" + x.SpeciesID);
                 img.Click += TogglePokemonState;
 
+                Label lblImg = new Label();
+                lblImg.Text = "\u2713";
+                lblImg.Visible = false;
+
                 //HtmlImage img = new HtmlImage();
                 //img.Src = "/Content/img/pokemon/" + x.SpeciesID + ".png";
 
                 panelHeading.InnerText = x.Name;
 
                 panelBody.Controls.Add(img);
+                panelBody.Controls.Add(lblImg);
 
                 panelOutside.Controls.Add(panelHeading);
                 panelOutside.Controls.Add(panelBody);
@@ -54,16 +59,17 @@ namespace ProjectMeowth
             ImageButton img = (ImageButton)sender;
             String SpeciesID = img.Attributes["data-speciesid"];
 
+            
             if(img.Style["opacity"] == "0.3")
             {
                 img.Style.Remove("opacity");
+                img.Parent.Controls[1].Visible = false;
             }
             else
             {
                 img.Style.Add("opacity", "0.3");
+                img.Parent.Controls[1].Visible = true;
             }
-            
-            
         }
     }
 }
