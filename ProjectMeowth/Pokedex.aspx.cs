@@ -30,21 +30,14 @@ namespace ProjectMeowth
                 HtmlGenericControl panelBody = new HtmlGenericControl();
                 panelBody.Attributes.Add("class", "panel-body");
 
+                
+                ImageButton img = new ImageButton();
+                img.ImageUrl = "/Content/img/pokemon/" + x.SpeciesID + ".png";
+                img.Attributes.Add("data-speciesid", "SpeciesID-" + x.SpeciesID);
+                img.Click += AddPokemon;
 
-                /*
-                HtmlGenericControl div = new HtmlGenericControl();
-                string customClass = "generation-" + x.Generation.ToString() + " " + x.PokemonType;
-                div.Attributes.Add("class", "grid-item" + customClass);
-                div.InnerText = x.Name;
-                */
-                HtmlImage img = new HtmlImage();
-                //img.Src = "/Content/img/150.png";
-                img.Src = "/Content/img/pokemon/" + x.SpeciesID + ".png";
-
-                /*
-                div.Controls.Add(img);
-                PokedexGrid.Controls.Add(div);
-                */
+                //HtmlImage img = new HtmlImage();
+                //img.Src = "/Content/img/pokemon/" + x.SpeciesID + ".png";
 
                 panelHeading.InnerText = x.Name;
 
@@ -54,6 +47,16 @@ namespace ProjectMeowth
                 panelOutside.Controls.Add(panelBody);
                 PokedexGrid.Controls.Add(panelOutside);
             });
+        }
+
+        public void AddPokemon(object sender, ImageClickEventArgs e)
+        {
+            ImageButton img = (ImageButton)sender;
+            String SpeciesID = img.Attributes["data-speciesid"];
+
+            img.Style.Add("opacity", "0.3");
+            img.Attributes.Add("disabled", "disabled");
+         
         }
     }
 }
