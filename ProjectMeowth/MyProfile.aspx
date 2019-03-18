@@ -3,10 +3,11 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <asp:Panel ID="unauthorizedUser" runat="server" Visible="true">
         <h2>Please Log in, or Register</h2>
-        <li>
-            <ul><a href="Account/Login.aspx">Log In</a></ul>
-            <ul><a href="Account/Register.aspx">Register</a></ul>
-        </li>
+        <br />
+            <h3><a href="Account/Login.aspx">Log In</a></h3>
+            <h3><a href="Account/Register.aspx">Register</a></h3><br />
+
+        
     </asp:Panel>
     <asp:Panel ID="loginUser" runat="server" Visible="false">
 
