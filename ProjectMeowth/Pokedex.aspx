@@ -50,9 +50,13 @@
             </div>
         </div>
 
-        <div id="PokedexGrid" class="grid" runat="server">
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+            <ContentTemplate>
+                <div id="PokedexGrid" class="grid" runat="server">
+                </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
             
-        </div>
     </div>
 
     <script src="/Scripts/isotope.pkgd.min.js"></script>
