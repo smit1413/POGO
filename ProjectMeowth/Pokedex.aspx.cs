@@ -16,18 +16,13 @@ namespace ProjectMeowth
             PokedexFakeGenerator generator = new PokedexFakeGenerator();
             List<PokemonModel> lstPokemon = generator.GetFakePokedex();
 
-            ////< div class="grid-item region-johto type-none">A</div>
-            ////<div class="grid-item grid-item--width2 region-kanto type-dragon">B</div>
-            ////<div class="grid-item region-johto type-dragon">C</div>
-            ////<div class="grid-item region-kanto type-none">D</div>
-            ////<div class="grid-item region-johto type-none">E</div>
-
             lstPokemon.ForEach(x =>
             {
                 string customClass = "Generation-" + x.Generation.ToString() + " " + x.PokemonType;
 
                 HtmlGenericControl panelOutside = new HtmlGenericControl();
                 panelOutside.Attributes.Add("class", "panel panel-success" + " grid-item " + customClass);
+                panelOutside.Attributes.Add("style", "min-height: 120px;");
 
                 HtmlGenericControl panelHeading = new HtmlGenericControl();
                 panelHeading.Attributes.Add("class", "panel-heading");
