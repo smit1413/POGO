@@ -6,13 +6,15 @@
     <asp:Table id="tableRaid" runat="server">
         <asp:TableRow>
             <asp:TableCell>
-                Tier
+                Tier 
             </asp:TableCell>
             <asp:TableCell>
                 Name
             </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow>
             <asp:TableCell>
-                <asp:Image id="imgRaid" runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/App_Data/img/Raid.png"/>
+                <asp:Image id="imgRaid" runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" Width ="20px" Height="20px"/>
             </asp:TableCell>
         </asp:TableRow>
     </asp:Table>

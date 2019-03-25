@@ -175,7 +175,6 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="App_Data\img\Raid.png" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\Audio\pokeSong.mp3" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -198,6 +197,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Image\Raid.png" />
     <Content Include="Leaderboards.aspx" />
     <Content Include="MyProfile.aspx" />
     <Content Include="POGOGAKKO.ico" />
@@ -415,7 +415,9 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
