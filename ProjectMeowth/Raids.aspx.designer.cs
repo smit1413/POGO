@@ -22,12 +22,30 @@ namespace ProjectMeowth {
         protected global::System.Web.UI.WebControls.Table tableRaid;
         
         /// <summary>
-        /// imgRaid control.
+        /// imgRaid1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgRaid;
+        protected global::System.Web.UI.WebControls.Image imgRaid1;
+        
+        /// <summary>
+        /// imgRaid2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgRaid2;
+        
+        /// <summary>
+        /// imgRaid3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgRaid3;
     }
 }
