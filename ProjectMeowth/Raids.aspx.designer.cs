@@ -22,49 +22,13 @@ namespace ProjectMeowth {
         protected global::System.Web.UI.WebControls.Table tableRaid;
         
         /// <summary>
-        /// imgRaid1 control.
+        /// imgRaid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgRaid1;
-        
-        /// <summary>
-        /// imgRaid2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgRaid2;
-        
-        /// <summary>
-        /// imgRaid3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgRaid3;
-        
-        /// <summary>
-        /// imgRaid4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgRaid4;
-        
-        /// <summary>
-        /// imgRaid5 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgRaid5;
+        protected global::System.Web.UI.WebControls.Image imgRaid;
         
         /// <summary>
         /// imgDialga control.
@@ -74,5 +38,14 @@ namespace ProjectMeowth {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image imgDialga;
+        
+        /// <summary>
+        /// imgRaidTier4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgRaidTier4;
     }
 }
