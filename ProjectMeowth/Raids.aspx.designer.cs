@@ -31,12 +31,12 @@ namespace ProjectMeowth {
         protected global::System.Web.UI.WebControls.Image imgDialga;
         
         /// <summary>
-        /// imgRaidTier4 control.
+        /// imgTyranitar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgRaidTier4;
+        protected global::System.Web.UI.WebControls.Image imgTyranitar;
     }
 }

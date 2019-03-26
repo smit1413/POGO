@@ -4,7 +4,7 @@
     <h2>Raids</h2>
     <h3>Current Raid Bosses</h3>
     <%--Testing manual table setup --%>
-    <asp:Table id="tableRaid" runat="server" BorderStyle="Solid" BorderColor="#663300" Width="20%" BorderWidth="0.2em">
+    <asp:Table id="tableRaid" runat="server" BorderStyle="Solid" BorderColor="#663300" Width="50%" BorderWidth="0.2em">
         <asp:TableHeaderRow>
             <asp:TableHeaderCell>
                 Boss Tier 
@@ -27,27 +27,32 @@
             </asp:TableCell>
             <asp:TableCell>
                 <%--Could add image for each pokemon--%>
-                 Dialga<br/>
-                <asp:Image ID="imgDialga" runat="server" AlternateText="Dialga" ImageAlign="Left" ImageUrl="~/Image/Dialga.png" Width="50px" Height="50px" />
+                <asp:Image ID="imgDialga" runat="server" AlternateText="Dialga" ImageUrl="~/Image/Dialga.png" Width="50px" Height="50px" Style="display:inline"/><br />
+                Dialga
             </asp:TableCell>
             <asp:TableCell>
-                12548
+                48742
             </asp:TableCell>
         </asp:TableRow>
                 <asp:TableRow>
             <asp:TableCell>
                 <%--Testing manually setting img --%>
-                <asp:Image id="imgRaidTier4" runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" Width ="20px" Height="20px" />
+                <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" Width ="20px" Height="20px" />
+                <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" Width ="20px" Height="20px" />
+                <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" Width ="20px" Height="20px" />
+                <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" Width ="20px" Height="20px" />
             </asp:TableCell>
             <asp:TableCell>
                 <%--Could add image for each pokemon--%>
-                 Other<br/>
+                <asp:Image ID="imgTyranitar" runat="server" AlternateText="Dialga" ImageUrl="~/Image/Tyranitar.png" Width="50px" Height="50px" Style="display:inline"/><br />
+                Tyranitar
             </asp:TableCell>
             <asp:TableCell>
-                12548
+                34323
             </asp:TableCell>
         </asp:TableRow>
 
 
     </asp:Table>
+    <iframe src="https://discordapp.com/widget?id=200837505145110528&theme=light" width="350" height="500"></iframe>
 </asp:Content>
