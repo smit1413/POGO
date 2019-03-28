@@ -1,17 +1,12 @@
 ﻿jQuery(document).ready(function ($) {
     var theme = localStorage.getItem('theme');
     var themeName = '';
-
-    if (theme) {
+    /*
+    if (localStorage.getItem('theme') === null) {
         localStorage.setItem('theme', 'default');
     }
-
+    */
     switch (theme) {
-        case "default":
-            themeName = 'trio-bg2';
-            setBackground(themeName);
-            break;
-
         case "valor":
             themeName = 'valor-bg';
             setBackground(themeName);
@@ -27,6 +22,11 @@
             setBackground(themeName);
             break;
 
+        //case "default":
+        default:
+            themeName = 'trio-bg2';
+            setBackground(themeName);
+            break;
     }
 
     $('#valorBtn').click(function (e) {
