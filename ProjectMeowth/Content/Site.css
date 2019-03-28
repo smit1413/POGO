@@ -1,7 +1,58 @@
 ﻿/* Move down content because we have a fixed navbar that is 50px tall */
 body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif !important;
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/trio-bg2.png");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.clearfix:before {
+    display: none!important;
+}
+.icon-bar {
+    background-color: white;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.card {
+    border: none !important;
+}
+
+.navMain {
+    list-style: none;
+    text-align: center;
+}
+
+.navMain li {
+    display: inline-block;
+    padding: 20px;
+}
+
+
+
+a.h3 {
+    color: #FFF;
+}
+
+#dropdownMenuButton {
+    color: white;
+}
+.dropdown-menu a {
+    color: black;
+}
+
+nav.navbar {
+    background-color: transparent;
+    border: none!important;
+}
+
+.footer {
+    text-align: center;
+    color: white;
 }
 
 /* Wrapping element */
@@ -34,5 +85,11 @@ input[type="select"] {
     }
     .body-content {
         padding: 0;
+    }
+    
+}
+@media screen and (max-width: 767px) {
+    .navMain li {
+        display: block;
     }
 }
