@@ -26,7 +26,7 @@
 
             <div style="padding-top: 1%"></div>
 
-            <div class="btn-group btn-grou-sm button-group" data-filter-group="type">
+            <div class="btn-group btn-group-sm button-group" data-filter-group="type">
 
                 <!-- NOTE: You must NOT use the button tag here, since it triggers a postback in ASP.NET & resets the filter -->
                 <input type="button" class="btn btn-info" data-filter="*" value="Show All" />
