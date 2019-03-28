@@ -3,32 +3,30 @@
     var themeName = '';
 
     if (theme) {
-        switch (theme) {
-            case "default":
-                themeName = 'trio-bg2';
-                setBackground(themeName);
-                break;
-
-            case "valor":
-                themeName = 'valor-bg';
-                setBackground(themeName);
-                break;
-
-            case "instinct":
-                themeName = 'instinct-bg';
-                setBackground(themeName);
-                break;
-
-            case "mystic":
-                themeName = 'mystic-bg';
-                setBackground(themeName);
-                break;
-
-        }
-
-    } else {
         localStorage.setItem('theme', 'default');
-        themeName = 'trio-bg2';
+    }
+
+    switch (theme) {
+        case "default":
+            themeName = 'trio-bg2';
+            setBackground(themeName);
+            break;
+
+        case "valor":
+            themeName = 'valor-bg';
+            setBackground(themeName);
+            break;
+
+        case "instinct":
+            themeName = 'instinct-bg';
+            setBackground(themeName);
+            break;
+
+        case "mystic":
+            themeName = 'mystic-bg';
+            setBackground(themeName);
+            break;
+
     }
 
     $('#valorBtn').click(function (e) {
