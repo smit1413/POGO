@@ -27,6 +27,7 @@
         }
 
     } else {
+        localStorage.setItem('theme', 'default');
         themeName = 'trio-bg2';
     }
 
@@ -59,6 +60,6 @@
     });
 
     function setBackground(themeName) {
-        $('body').css('background-image', 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Content/Images/' + themeName + '.png")');
+        $('body').css('background-image', 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Content/Images/' + themeName + '.png")');
     }
 });
