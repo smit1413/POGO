@@ -19,6 +19,9 @@
                 <input type="button" class="btn btn-success" data-filter=".Generation-2" value="Generation 2 - Johto" />
                 <input type="button" class="btn btn-success" data-filter=".Generation-3" value="Generation 3 - Hoenn" />
                 <input type="button" class="btn btn-success" data-filter=".Generation-4" value="Generation 4 - Sinnoh" />
+                <input type="button" class="btn btn-success" data-filter=".Generation-5" value="Generation 5 - Unova" />
+                <input type="button" class="btn btn-success" data-filter=".Generation-6" value="Generation 6 - Kalos" />
+                <input type="button" class="btn btn-success" data-filter=".Generation-7" value="Generation 7 - Alola" />
             </div>
 
             <div style="padding-top: 1%"></div>
