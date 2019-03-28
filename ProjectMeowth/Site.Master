@@ -6,13 +6,13 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %>Project Meowth</title>
+    <title><%: Page.Title %> | POGO Gakkō</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/POGOGAKKO.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
 <body>
@@ -45,19 +45,21 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Project Meowth</a>
+                    <a class="navbar-brand" runat="server" href="~/"><span ID="logo"><span class="pokemon"><i></i> </span> </span>POGO Gakkō</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Register">Register</a></li>
-                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                                <li><a runat="server" href="~/">Home</a></li>
+                                <li><a runat="server" href="~/Pokedex">Pokédex</a></li>
+                                <li><a runat="server" href="~/Trades">Trades</a></li>
+                                <li><a runat="server" href="~/Raids">Raids</a></li>
+                                <li><a runat="server" href="~/Leaderboards">Leaderboards</a></li>
+                                <li><a runat="server" href="~/MyProfile">Profile</a></li>
                             </ul>
                         </AnonymousTemplate>
                         <LoggedInTemplate>
@@ -77,6 +79,8 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
+                <a runat="server" href="~/About">About</a>
+                <a runat="server" href="~/Contact">Contact</a>
                 <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
             </footer>
         </div>
