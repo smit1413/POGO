@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Under Construction</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="/Content/bootstrap.css" />
+    <link rel="stylesheet" href="/Content/Site.css" />
+    <link rel="stylesheet" href="/Content/pokeStyles.css" />
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="city">
+            <audio id="pokesong" src="/Content/Audio/pokeSong.mp3"></audio>
+            <button onclick="playpokesong()">►</button>
+            <button onclick="pausepokesong()"> ❚❚ </button>
+
+            <div class="grass">
+                <div class="river"></div>
+                <div class="tree"></div>
+                <div class="tree"></div>
+                <div class="tree"></div>
+                <div class="tree"></div>
+                <div class="tree"></div>
+                <div class="path"></div>
+                <div class="pathend"></div>
+                <div class="flower">
+                    <span class="petal"></span>
+                    <span class="petal"></span>
+                    <span class="petal"></span>
+                </div>
+                <div class="longgrass"></div>
+                <div class="longgrass"></div>
+                <div class="flower2">
+                    <span class="petal"></span>
+                    <span class="petal"></span>
+                    <span class="petal"></span>
+                </div>
+                <div class="flower3">
+                    <span class="petal"></span>
+                    <span class="petal"></span>
+                    <span class="petal"></span>
+                </div>
+                <div class="house">
+                    <div class="houseshadow"></div>
+                    <div class="door"></div>
+                    <div class="window"></div>
+                    <div class="roof">
+                        <div class="roofwindow"></div>
+                    </div><!--roof-->
+                </div><!--house-->
+                <div class="pokeball"></div>
+
+            </div><!--grass-->
+            <div class="pikachu">
+                <div class="head"></div>
+                <div class="backfeet"></div>
+                <div class="frontfeet"></div>
+            </div>
+        </div><!--city-->
+    </div> <!-- /wrapper -->
+
+    <script>
+        var audio = document.getElementById("pokesong");
+
+        function playpokesong() {
+          audio.play();
+        }
+
+        function pausepokesong() {
+          audio.pause();
+        }
+
+    </script>
+    <script type="text/javascript" src="/Scripts/modernizr-2.8.3.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/Scripts/bootstrap.min.js"></script>    
+</body>
+</html>
