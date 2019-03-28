@@ -33,28 +33,52 @@ namespace ProjectMeowth
                 HtmlGenericControl cardBody = new HtmlGenericControl();
                 cardBody.Attributes.Add("class", "card-body");
 
-                HtmlImage cardImage = new HtmlImage();
+                ImageButton cardImage = new ImageButton();
                 cardImage.Attributes.Add("class", "card-img-top");
                 cardImage.Attributes.Add("data-speciesid", "SpeciesID-" + x.SpeciesID);
+                cardImage.Click += TogglePokemonState;
+
+                //HtmlImage innerImg = new HtmlImage();
                 String imageURL = "/Content/img/pokemon/" + x.SpeciesID + ".png";
-                if(File.Exists(Server.MapPath(imageURL)))
+                if (File.Exists(Server.MapPath(imageURL)))
                 {
-                    cardImage.Src = imageURL;
+                    //innerImg.Src = imageURL;
+                    cardImage.ImageUrl = imageURL;
                     cardImage.Attributes.Add("style", "max-width: 150px");
+                    //innerImg.Attributes.Add("style", "max-width: 150px");
                 }
-                
+                //cardImage.Controls.Add(innerImg);
+
+                ///
+                ////Label lblImg = new Label();
+                ////lblImg.Text = "\u2713";
+                ////lblImg.Visible = false;
+
+
+
+                ////String imageURL = "/Content/img/pokemon/" + x.SpeciesID + ".png";
+                ////if(File.Exists(Server.MapPath(imageURL)))
+                ////{
+                ////    cardImage.Src = imageURL;
+                ////    cardImage.Attributes.Add("style", "max-width: 150px");
+                ////}
+
 
                 HtmlGenericControl cardTitle = new HtmlGenericControl();
                 cardTitle.Attributes.Add("class", "card-title");
                 cardTitle.InnerText = x.Name;
 
-                HtmlAnchor cardLink = new HtmlAnchor();
-                cardLink.HRef = "#";
-                cardLink.Attributes.Add("class", "btn btn-sm btn-info");
-                cardLink.InnerText = "Need this";
+                ////HtmlAnchor cardLink = new HtmlAnchor();
+                ////cardLink.HRef = "#";
+                ////cardLink.Attributes.Add("class", "btn btn-sm btn-info");
+                ////cardLink.InnerText = "Need this";
+                Label lblImg = new Label();
+                lblImg.Text = "\u2713";
+                lblImg.Visible = false;
 
                 cardBody.Controls.Add(cardTitle);
-                cardBody.Controls.Add(cardLink);
+                //cardBody.Controls.Add(cardLink);
+                cardBody.Controls.Add(lblImg);
                 cardWrapper.Controls.Add(cardImage);
                 cardWrapper.Controls.Add(cardBody);
 
@@ -106,12 +130,12 @@ namespace ProjectMeowth
             if(img.Style["opacity"] == "0.3")
             {
                 img.Style.Remove("opacity");
-                img.Parent.Controls[1].Visible = false;
+                img.Parent.Controls[1].Controls[1].Visible = false;
             }
             else
             {
                 img.Style.Add("opacity", "0.3");
-                img.Parent.Controls[1].Visible = true;
+                img.Parent.Controls[1].Controls[1].Visible = true;
             }
         }
     }
