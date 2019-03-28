@@ -36,10 +36,11 @@
                 <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
                 <asp:ScriptReference Name="WebFormsBundle" />
+                <asp:ScriptReference Path="~/Scripts/homepage.js" />
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-    <script src="Scripts/homepage.js"></script>
+    
 
         <nav class="navbar clearfix">
             <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#navbarSupportedContent">
