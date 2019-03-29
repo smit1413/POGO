@@ -38,7 +38,7 @@ namespace ProjectMeowth
                 cardWrapper.Attributes.Add("class", "card border-info col-sm-3 col-md-2 col-lg-1 grid-item " + customClass);
                 
                 // Due to jQuery.imgCheckbox, cards are getting overlapped on each other, so we need to add margin-bottom for the label.
-                cardWrapper.Attributes.Add("style", "margin-bottom: 3%");
+                cardWrapper.Attributes.Add("style", "margin-bottom: 3%; min-height: 110px;");
 
                 HtmlGenericControl cardContents = new HtmlGenericControl();
                 cardContents.Attributes.Add("class", "pokemonCard");
@@ -49,15 +49,18 @@ namespace ProjectMeowth
 
                 HtmlGenericControl cardImage = new HtmlGenericControl();
                 cardImage.Attributes.Add("class", "card-img-top mx-auto");
+                //cardImage.Attributes.Add("style", "min-height: 100px");
                 cardImage.Attributes.Add("data-speciesid", "SpeciesID-" + x.SpeciesID);
 
                 HtmlImage img = new HtmlImage();
                 img.Attributes.Add("class", "pokemonImage");
+                //img.Src = "/Content/img/Loading Pokeball-xs.gif";
+
                 String imageURL = "/Content/img/pokemon/" + x.SpeciesID + ".png";
                 if (File.Exists(Server.MapPath(imageURL)))
                 {
-                    img.Src = imageURL;
-                    img.Attributes.Add("style", "max-width: 100px");
+                    img.Attributes.Add("data-src", imageURL);
+                    img.Attributes.Add("height", "100px");
                 }
                 cardImage.Controls.Add(img);
 

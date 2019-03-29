@@ -5,6 +5,7 @@
         .grid-item { /*width: 25%;*/ background-color: lightblue; }
         
     </style>
+    <link rel="stylesheet" href="jquery.lazyloadxt.spinner.css">
 </asp:Content>
 
 <asp:Content ID="BodyContentPokedex" ContentPlaceHolderID="MainContent" runat="server">
@@ -72,6 +73,7 @@
 
     <script src="/Scripts/isotope.pkgd.min.js"></script>
     <script src="/Scripts/jquery.imgcheckbox.js"></script>
+    <script src="/Scripts/jquery.lazyloadxt.min.js"></script>
     <script>
 
         // Initialize Isotope
@@ -119,5 +121,6 @@
     <script>
         $(".pokemonCard").imgCheckbox();
     </script>
+    
 </asp:Content>
 
