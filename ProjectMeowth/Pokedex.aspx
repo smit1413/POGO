@@ -2,26 +2,33 @@
 
 <asp:Content ID="HeaderPokedex" ContentPlaceHolderID="HeadContent" runat="server">
     <style>
-        .grid-item { width: 25%; background-color: lightblue; }
-        .grid-item--width2 { width: 50%; background-color: coral; }
+        .grid-item { /*width: 25%;*/ background-color: lightblue; }
+        
     </style>
 </asp:Content>
 
 <asp:Content ID="BodyContentPokedex" ContentPlaceHolderID="MainContent" runat="server">
     <h3>You have reached the - <%: Title %> page.</h3>
+
+    <asp:Label ID="lblHi" runat="server"></asp:Label>
+    
     <div class="container">
         <div id="btnFilters">
-            <div class="btn-group btn-group-sm button-group filter-button-group" data-filter-group="region">
+            <div class="btn-toolbar button-group filter-button-group" data-filter-group="region">
+                <div class="btn-group btn-group-sm">
 
-                <!-- NOTE: You must NOT use the button tag here, since it triggers a postback in ASP.NET & resets the filter -->
-                <input type="button" class="btn btn-success" data-filter="*" value="Show All" />
-                <input type="button" class="btn btn-success" data-filter=".Generation-1" value="Generation 1 - Kanto" />
-                <input type="button" class="btn btn-success" data-filter=".Generation-2" value="Generation 2 - Johto" />
-                <input type="button" class="btn btn-success" data-filter=".Generation-3" value="Generation 3 - Hoenn" />
-                <input type="button" class="btn btn-success" data-filter=".Generation-4" value="Generation 4 - Sinnoh" />
-                <input type="button" class="btn btn-success" data-filter=".Generation-5" value="Generation 5 - Unova" />
-                <input type="button" class="btn btn-success" data-filter=".Generation-6" value="Generation 6 - Kalos" />
-                <input type="button" class="btn btn-success" data-filter=".Generation-7" value="Generation 7 - Alola" />
+                    <!-- NOTE: You must NOT use the button tag here, since it triggers a postback in ASP.NET & resets the filter -->
+                    <input type="button" class="btn btn-success" data-filter="*" value="Show All" />
+                </div>
+                <div class="btn-group btn-group-sm">
+                    <input type="button" class="btn btn-success" data-filter=".Generation-1" value="Gen 1 - Kanto" />
+                    <input type="button" class="btn btn-success" data-filter=".Generation-2" value="Gen 2 - Johto" />
+                    <input type="button" class="btn btn-success" data-filter=".Generation-3" value="Gen 3 - Hoenn" />
+                    <input type="button" class="btn btn-success" data-filter=".Generation-4" value="Gen 4 - Sinnoh" />
+                    <input type="button" class="btn btn-success" data-filter=".Generation-5" value="Gen 5 - Unova" />
+                    <input type="button" class="btn btn-success" data-filter=".Generation-6" value="Gen 6 - Kalos" />
+                    <input type="button" class="btn btn-success" data-filter=".Generation-7" value="Gen 7 - Alola" />
+                </div>
             </div>
 
             <div style="padding-top: 1%"></div>

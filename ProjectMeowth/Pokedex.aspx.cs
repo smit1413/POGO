@@ -1,4 +1,5 @@
-﻿using ProjectMeowth.Models;
+﻿using ProjectMeowth.Helpers;
+using ProjectMeowth.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,6 +15,15 @@ namespace ProjectMeowth
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(!IsPostBack)
+            {
+
+                //Response.Cookies["myCookie"].Value = "some cookie value";
+                //var cookieValue = Request.Cookies["myCookie"].Value;
+            }
+
+            lblHi.Text = AccountHelper.GetUsername();
+
             PokedexFakeGenerator generator = new PokedexFakeGenerator();
             List<PokemonModel> lstPokemon = generator.GetFakePokedex();
 
@@ -34,7 +44,7 @@ namespace ProjectMeowth
                 cardBody.Attributes.Add("class", "card-body");
 
                 ImageButton cardImage = new ImageButton();
-                cardImage.Attributes.Add("class", "card-img-top");
+                cardImage.Attributes.Add("class", "card-img-top mx-auto");
                 cardImage.Attributes.Add("data-speciesid", "SpeciesID-" + x.SpeciesID);
                 cardImage.Click += TogglePokemonState;
 
@@ -127,7 +137,7 @@ namespace ProjectMeowth
             String SpeciesID = img.Attributes["data-speciesid"];
 
             
-            if(img.Style["opacity"] == "0.3")
+            if (img.Style["opacity"] == "0.3")
             {
                 img.Style.Remove("opacity");
                 img.Parent.Controls[1].Controls[1].Visible = false;
