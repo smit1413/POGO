@@ -9,9 +9,7 @@
 
 <asp:Content ID="BodyContentPokedex" ContentPlaceHolderID="MainContent" runat="server">
     <h3>You have reached the - <%: Title %> page.</h3>
-
-    <asp:Label ID="lblHi" runat="server"></asp:Label>
-    
+     
     <div class="container">
         <div id="btnFilters">
             <div class="btn-toolbar button-group filter-button-group" data-filter-group="region">
@@ -73,6 +71,7 @@
     </div>
 
     <script src="/Scripts/isotope.pkgd.min.js"></script>
+    <script src="/Scripts/jquery.imgcheckbox.js"></script>
     <script>
 
         // Initialize Isotope
@@ -116,6 +115,9 @@
             }
             return value;
         }
+    </script>
+    <script>
+        $(".card-img-top").imgCheckbox();
     </script>
 </asp:Content>
 

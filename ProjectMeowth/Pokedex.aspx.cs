@@ -22,41 +22,40 @@ namespace ProjectMeowth
                 //var cookieValue = Request.Cookies["myCookie"].Value;
             }
 
-            lblHi.Text = AccountHelper.GetUsername();
-
             PokedexFakeGenerator generator = new PokedexFakeGenerator();
             List<PokemonModel> lstPokemon = generator.GetFakePokedex();
 
             HtmlGenericControl bootStrapRow = new HtmlGenericControl();
-            bootStrapRow.Attributes.Add("class", "row");
+            bootStrapRow.Attributes.Add("class", "row  align-items-center");
 
             PokedexGrid.Controls.Add(bootStrapRow);
 
 
-            lstPokemon.ForEach(x =>
+            //lstPokemon.ForEach(x =>
+            lstPokemon.Take(20).ToList<PokemonModel>().ForEach(x =>
             {
                 string customClass = "Generation-" + x.Generation.ToString() + " " + x.PokemonType;
 
                 HtmlGenericControl cardWrapper = new HtmlGenericControl();
-                cardWrapper.Attributes.Add("class", "card col-sm-6 col-md-4 col-lg-2 grid-item " + customClass);
+                cardWrapper.Attributes.Add("class", "card border-info col-sm-6 col-md-4 col-lg-2 grid-item " + customClass);
 
                 HtmlGenericControl cardBody = new HtmlGenericControl();
                 cardBody.Attributes.Add("class", "card-body");
 
-                ImageButton cardImage = new ImageButton();
-                cardImage.Attributes.Add("class", "card-img-top mx-auto");
-                cardImage.Attributes.Add("data-speciesid", "SpeciesID-" + x.SpeciesID);
-                cardImage.Click += TogglePokemonState;
+                //////ImageButton cardImage = new ImageButton();
+                //////cardImage.Attributes.Add("class", "card-img-top mx-auto");
+                //////cardImage.Attributes.Add("data-speciesid", "SpeciesID-" + x.SpeciesID);
+                //////cardImage.Click += TogglePokemonState;
 
-                //HtmlImage innerImg = new HtmlImage();
-                String imageURL = "/Content/img/pokemon/" + x.SpeciesID + ".png";
-                if (File.Exists(Server.MapPath(imageURL)))
-                {
-                    //innerImg.Src = imageURL;
-                    cardImage.ImageUrl = imageURL;
-                    cardImage.Attributes.Add("style", "max-width: 150px");
-                    //innerImg.Attributes.Add("style", "max-width: 150px");
-                }
+                ////////HtmlImage innerImg = new HtmlImage();
+                //////String imageURL = "/Content/img/pokemon/" + x.SpeciesID + ".png";
+                //////if (File.Exists(Server.MapPath(imageURL)))
+                //////{
+                //////    //innerImg.Src = imageURL;
+                //////    cardImage.ImageUrl = imageURL;
+                //////    cardImage.Attributes.Add("style", "max-width: 150px");
+                //////    //innerImg.Attributes.Add("style", "max-width: 150px");
+                //////}
                 //cardImage.Controls.Add(innerImg);
 
                 ///
@@ -64,15 +63,19 @@ namespace ProjectMeowth
                 ////lblImg.Text = "\u2713";
                 ////lblImg.Visible = false;
 
+                HtmlGenericControl cardImage = new HtmlGenericControl();
+                cardImage.Attributes.Add("class", "card-img-top mx-auto");
+                cardImage.Attributes.Add("data-speciesid", "SpeciesID-" + x.SpeciesID);
 
-
-                ////String imageURL = "/Content/img/pokemon/" + x.SpeciesID + ".png";
-                ////if(File.Exists(Server.MapPath(imageURL)))
-                ////{
-                ////    cardImage.Src = imageURL;
-                ////    cardImage.Attributes.Add("style", "max-width: 150px");
-                ////}
-
+                HtmlImage img = new HtmlImage();
+                img.Attributes.Add("class", "pokemonImage");
+                String imageURL = "/Content/img/pokemon/" + x.SpeciesID + ".png";
+                if (File.Exists(Server.MapPath(imageURL)))
+                {
+                    img.Src = imageURL;
+                    img.Attributes.Add("style", "max-width: 100px");
+                }
+                cardImage.Controls.Add(img);
 
                 HtmlGenericControl cardTitle = new HtmlGenericControl();
                 cardTitle.Attributes.Add("class", "card-title");
@@ -92,6 +95,7 @@ namespace ProjectMeowth
                 cardWrapper.Controls.Add(cardImage);
                 cardWrapper.Controls.Add(cardBody);
 
+                cardWrapper.Attributes.Add("style", "margin-bottom: 3%");
                 bootStrapRow.Controls.Add(cardWrapper);
                 //PokedexGrid.Controls.Add(cardWrapper);
                 //////////////////

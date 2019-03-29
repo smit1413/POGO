@@ -21,10 +21,10 @@ namespace ProjectMeowth.Helpers
             if (System.Web.HttpContext.Current != null &&
                 System.Web.HttpContext.Current.User.Identity.IsAuthenticated)
             {
-                System.Web.Security.MembershipUser usr = Membership.GetUser();
+                var usr = HttpContext.Current.User.Identity;
                 if (usr != null)
                 {
-                    userName = usr.UserName;
+                    userName = usr.Name;
                 }
             }
 
