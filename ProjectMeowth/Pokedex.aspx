@@ -117,7 +117,7 @@
         }
     </script>
     <script>
-        $(".card-img-top").imgCheckbox();
+        $(".pokemonCard").imgCheckbox();
     </script>
 </asp:Content>
 

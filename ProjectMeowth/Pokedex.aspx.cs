@@ -37,7 +37,14 @@ namespace ProjectMeowth
                 string customClass = "Generation-" + x.Generation.ToString() + " " + x.PokemonType;
 
                 HtmlGenericControl cardWrapper = new HtmlGenericControl();
-                cardWrapper.Attributes.Add("class", "card border-info col-sm-6 col-md-4 col-lg-2 grid-item " + customClass);
+                cardWrapper.Attributes.Add("class", "card border-info col-sm-3 col-md-2 col-lg-1 grid-item " + customClass);
+                
+                // Due to jQuery.imgCheckbox, cards are getting overlapped on each other, so we need to add margin-bottom for the label.
+                cardWrapper.Attributes.Add("style", "margin-bottom: 3%");
+
+                HtmlGenericControl cardContents = new HtmlGenericControl();
+                cardContents.Attributes.Add("class", "pokemonCard");
+                
 
                 HtmlGenericControl cardBody = new HtmlGenericControl();
                 cardBody.Attributes.Add("class", "card-body");
@@ -92,10 +99,11 @@ namespace ProjectMeowth
                 cardBody.Controls.Add(cardTitle);
                 //cardBody.Controls.Add(cardLink);
                 cardBody.Controls.Add(lblImg);
-                cardWrapper.Controls.Add(cardImage);
-                cardWrapper.Controls.Add(cardBody);
+                cardContents.Controls.Add(cardImage);
+                cardContents.Controls.Add(cardBody);
 
-                cardWrapper.Attributes.Add("style", "margin-bottom: 3%");
+                
+                cardWrapper.Controls.Add(cardContents);
                 bootStrapRow.Controls.Add(cardWrapper);
                 //PokedexGrid.Controls.Add(cardWrapper);
                 //////////////////
