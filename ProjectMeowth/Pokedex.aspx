@@ -15,20 +15,23 @@
     <div class="container">
         <div id="btnFilters">
             <div class="btn-toolbar button-group filter-button-group" data-filter-group="region">
+                <label class="col-sm-2 col-form-label">Generation: </label>
+                <div class="col-sm-10">
                 <div class="btn-group btn-group-sm">
 
                     <!-- NOTE: You must NOT use the button tag here, since it triggers a postback in ASP.NET & resets the filter -->
                     <input type="button" class="btn btn-success" data-filter="*" value="Show All" />
                 </div>
                 <div class="btn-group btn-group-sm">
-                    <input type="button" class="btn btn-success" data-filter=".Generation-1" value="Gen 1 - Kanto" />
-                    <input type="button" class="btn btn-success" data-filter=".Generation-2" value="Gen 2 - Johto" />
-                    <input type="button" class="btn btn-success" data-filter=".Generation-3" value="Gen 3 - Hoenn" />
-                    <input type="button" class="btn btn-success" data-filter=".Generation-4" value="Gen 4 - Sinnoh" />
-                    <input type="button" class="btn btn-success" data-filter=".Generation-5" value="Gen 5 - Unova" />
-                    <input type="button" class="btn btn-success" data-filter=".Generation-6" value="Gen 6 - Kalos" />
-                    <input type="button" class="btn btn-success" data-filter=".Generation-7" value="Gen 7 - Alola" />
+                    <input type="button" class="btn btn-success" data-filter=".Generation-1" value="1" Title="Kanto" />
+                    <input type="button" class="btn btn-success" data-filter=".Generation-2" value="2" Title="Johto" />
+                    <input type="button" class="btn btn-success" data-filter=".Generation-3" value="3" Title="Hoenn" />
+                    <input type="button" class="btn btn-success" data-filter=".Generation-4" value="4" Title="Sinnoh" />
+                    <input type="button" class="btn btn-success" data-filter=".Generation-5" value="5" Title="Unova" />
+                    <input type="button" class="btn btn-success" data-filter=".Generation-6" value="6" Title="Kalos" />
+                    <input type="button" class="btn btn-success" data-filter=".Generation-7" value="7" Title="Alola" />
                 </div>
+                    </div>
             </div>
 
             <div style="padding-top: 1%"></div>
