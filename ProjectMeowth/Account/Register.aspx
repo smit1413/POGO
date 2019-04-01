@@ -1,9 +1,12 @@
 ﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="ProjectMeowth.Account.Register" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <h2><%: Title %>.</h2>
+    <h2><%: Title %></h2>
     <p class="text-danger">
         <asp:Literal runat="server" ID="ErrorMessage" />
+    </p>
+    <p class="text-success">
+        <asp:Literal runat="server" ID="SuccessMessage" />
     </p>
 
     <div class="form-horizontal">
@@ -70,5 +73,4 @@
             </div>
         </div>
     </div>
-        </div>
 </asp:Content>
