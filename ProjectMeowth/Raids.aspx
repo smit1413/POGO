@@ -35,6 +35,12 @@
             display:inline;
         }
 
+        .RaidTable{
+            border-color:#663300;
+            border-width:0.2em;
+            width:50%;
+            border-style:solid;
+        }
  
 
 
@@ -47,7 +53,7 @@
     <h2>Raids</h2>
     <h3>Current Raid Bosses</h3>
     <%--Testing manual table setup --%>
-    <asp:Table id="tableRaid" runat="server" BorderStyle="Solid" BorderColor="#663300" Width="50%" BorderWidth="0.2em">
+    <asp:Table id="tableRaid" runat="server" CssClass="RaidTable">
         <asp:TableHeaderRow>
             <asp:TableHeaderCell CssClass="TableHeader">
                 Boss Tier 
@@ -61,7 +67,7 @@
         </asp:TableHeaderRow>
         <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
@@ -69,7 +75,7 @@
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Giratina (Altered Forme)" ImageUrl="~/Image/Giratinadef.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Giratina (Altered Forme)</div>
             </asp:TableCell>
@@ -79,7 +85,7 @@
         </asp:TableRow>
                 <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
@@ -87,7 +93,7 @@
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Deoxys (Defense Forme)" ImageUrl="~/Image/Deoxysdef.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Deoxys (Defense Forme)</div>
             </asp:TableCell>
@@ -97,14 +103,14 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Absol" ImageUrl="~/Image/Absol.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Absol</div>
             </asp:TableCell>
@@ -114,14 +120,14 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Togetic" ImageUrl="~/Image/Togetic.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Togetic</div>
             </asp:TableCell>
@@ -131,14 +137,14 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Houndoom" ImageUrl="~/Image/Houndoom.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Houndoom</div>
             </asp:TableCell>
@@ -148,14 +154,14 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Dragonite" ImageUrl="~/Image/Dragonite.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Dragonite</div>
             </asp:TableCell>
@@ -165,14 +171,14 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Alolan Marowak" ImageUrl="~/Image/Alolan_Marowak.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Alolan Marowak</div>
             </asp:TableCell>
@@ -182,13 +188,13 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Machamp" ImageUrl="~/Image/Machamp.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Machamp</div>
             </asp:TableCell>
@@ -198,13 +204,13 @@
         </asp:TableRow>
                 <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Piloswine" ImageUrl="~/Image/Piloswine.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Piloswine</div>
             </asp:TableCell>
@@ -214,13 +220,13 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Granbull" ImageUrl="~/Image/Granbull.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Granbull</div>
             </asp:TableCell>
@@ -230,13 +236,13 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Gengar" ImageUrl="~/Image/Gengar.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Gengar</div>
             </asp:TableCell>
@@ -246,13 +252,13 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Alolan Raichu" ImageUrl="~/Image/Alolan_Raichu.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Alolan Raichu</div>
             </asp:TableCell>
@@ -262,12 +268,12 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Sneasel" ImageUrl="~/Image/Sneasel.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Sneasel</div>
             </asp:TableCell>
@@ -277,12 +283,12 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Mawile" ImageUrl="~/Image/Mawile.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Mawile</div>
             </asp:TableCell>
@@ -292,12 +298,12 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Misdreavus" ImageUrl="~/Image/Misdreavus.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Misdreavus</div>
             </asp:TableCell>
@@ -307,12 +313,12 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Sableye" ImageUrl="~/Image/Sableye.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Sableye</div>
             </asp:TableCell>
@@ -322,12 +328,12 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Alolan Exeggutor" ImageUrl="~/Image/Alolan_Exeggutor.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Alolan Exeggutor</div>
             </asp:TableCell>
@@ -337,11 +343,11 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Snorunt" ImageUrl="~/Image/Snorunt.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Snorunt</div>
             </asp:TableCell>
@@ -351,11 +357,11 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Drifloon" ImageUrl="~/Image/Drifloon.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Drifloon</div>
             </asp:TableCell>
@@ -365,11 +371,11 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Bagon" ImageUrl="~/Image/Bagon.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Bagon</div>
             </asp:TableCell>
@@ -379,11 +385,11 @@
         </asp:TableRow>
         <asp:TableRow>
             <asp:TableCell CssClass="TableCell">
-                <%--Testing manually setting img --%>
+                <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
-                <%--Could add image for each pokemon--%>
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Shinx" ImageUrl="~/Image/Shinx.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Shinx</div>
             </asp:TableCell>
@@ -393,5 +399,7 @@
         </asp:TableRow>
 
     </asp:Table>
-    <%--<iframe src="https://discordapp.com/widget?id=200837505145110528&theme=light" height="500"></iframe>--%>
+    <iframe src="https://discordapp.com/widget?id=200837505145110528&theme=light" height="300"></iframe>
+
+    <!--<iframe src="https://valendres.github.io/react-discord-widget/?serverId=200837505145110528" width="260" height="300" showHeader="false" showChannelIcon ="true"></iframe>-->
 </asp:Content>
