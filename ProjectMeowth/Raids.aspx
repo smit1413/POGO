@@ -52,7 +52,7 @@
     </style>
     <h2>Raids</h2>
     <h3>Current Raid Bosses</h3>
-    <%--Testing manual table setup --%>
+    <%--Raid Boss have to be manually updated --%>
     <asp:Table id="tableRaid" runat="server" CssClass="RaidTable">
         <asp:TableHeaderRow>
             <asp:TableHeaderCell CssClass="TableHeader">
@@ -76,8 +76,8 @@
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
                 <%-- Image of Pokemons--%>
-                <asp:Image runat="server" AlternateText="Giratina (Altered Forme)" ImageUrl="~/Image/Giratinadef.png" CssClass="PokemonImage"/><br />
-                <div class="pokemonName">Giratina (Altered Forme)</div>
+                <asp:Image runat="server" AlternateText="Giratina (Original Forme)" ImageUrl="~/Image/GiratinaOriginal.png" CssClass="PokemonImage"/><br />
+                <div class="pokemonName">Giratina (Original Forme)</div>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCell">
                 34987
@@ -111,6 +111,23 @@
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
                 <%-- Image of Pokemons--%>
+                <asp:Image runat="server" AlternateText="Tyranitar" ImageUrl="~/Image/tyranitar.png" CssClass="PokemonImage"/><br />
+                <div class="pokemonName">Tyranitar</div>
+            </asp:TableCell>
+            <asp:TableCell CssClass="TableCell">
+                26262
+            </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow>
+            <asp:TableCell CssClass="TableCell">
+                <%-- Manually Setting Image--%>
+                <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
+                <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
+                <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
+                <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
+            </asp:TableCell>
+            <asp:TableCell CssClass="TableCellMiddle">
+                <%-- Image of Pokemons--%>
                 <asp:Image runat="server" AlternateText="Absol" ImageUrl="~/Image/Absol.png" CssClass="PokemonImage"/><br />
                 <div class="pokemonName">Absol</div>
             </asp:TableCell>
@@ -128,45 +145,11 @@
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
                 <%-- Image of Pokemons--%>
-                <asp:Image runat="server" AlternateText="Togetic" ImageUrl="~/Image/Togetic.png" CssClass="PokemonImage"/><br />
-                <div class="pokemonName">Togetic</div>
+                <asp:Image runat="server" AlternateText="Ninjask" ImageUrl="~/Image/Ninjask.png" CssClass="PokemonImage"/><br />
+                <div class="pokemonName">Ninjask</div>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCell">
                 18671
-            </asp:TableCell>
-        </asp:TableRow>
-        <asp:TableRow>
-            <asp:TableCell CssClass="TableCell">
-                <%-- Manually Setting Image--%>
-                <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
-                <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
-                <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
-                <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
-            </asp:TableCell>
-            <asp:TableCell CssClass="TableCellMiddle">
-                <%-- Image of Pokemons--%>
-                <asp:Image runat="server" AlternateText="Houndoom" ImageUrl="~/Image/Houndoom.png" CssClass="PokemonImage"/><br />
-                <div class="pokemonName">Houndoom</div>
-            </asp:TableCell>
-            <asp:TableCell CssClass="TableCell">
-                26099
-            </asp:TableCell>
-        </asp:TableRow>
-        <asp:TableRow>
-            <asp:TableCell CssClass="TableCell">
-                <%-- Manually Setting Image--%>
-                <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
-                <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
-                <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
-                <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
-            </asp:TableCell>
-            <asp:TableCell CssClass="TableCellMiddle">
-                <%-- Image of Pokemons--%>
-                <asp:Image runat="server" AlternateText="Dragonite" ImageUrl="~/Image/Dragonite.png" CssClass="PokemonImage"/><br />
-                <div class="pokemonName">Dragonite</div>
-            </asp:TableCell>
-            <asp:TableCell CssClass="TableCell">
-                35137
             </asp:TableCell>
         </asp:TableRow>
         <asp:TableRow>
@@ -211,8 +194,8 @@
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
                 <%-- Image of Pokemons--%>
-                <asp:Image runat="server" AlternateText="Piloswine" ImageUrl="~/Image/Piloswine.png" CssClass="PokemonImage"/><br />
-                <div class="pokemonName">Piloswine</div>
+                <asp:Image runat="server" AlternateText="Scyther" ImageUrl="~/Image/Scyther.png" CssClass="PokemonImage"/><br />
+                <div class="pokemonName">Scyther</div>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCell">
                 13278
@@ -227,8 +210,8 @@
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
                 <%-- Image of Pokemons--%>
-                <asp:Image runat="server" AlternateText="Granbull" ImageUrl="~/Image/Granbull.png" CssClass="PokemonImage"/><br />
-                <div class="pokemonName">Granbull</div>
+                <asp:Image runat="server" AlternateText="Pinsir" ImageUrl="~/Image/Pinsir.png" CssClass="PokemonImage"/><br />
+                <div class="pokemonName">Pinsir</div>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCell">
                 15023
@@ -243,8 +226,8 @@
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
                 <%-- Image of Pokemons--%>
-                <asp:Image runat="server" AlternateText="Gengar" ImageUrl="~/Image/Gengar.png" CssClass="PokemonImage"/><br />
-                <div class="pokemonName">Gengar</div>
+                <asp:Image runat="server" AlternateText="Shuckle" ImageUrl="~/Image/Shuckle.png" CssClass="PokemonImage"/><br />
+                <div class="pokemonName">Shuckle</div>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCell">
                 19359
@@ -274,8 +257,8 @@
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
                 <%-- Image of Pokemons--%>
-                <asp:Image runat="server" AlternateText="Sneasel" ImageUrl="~/Image/Sneasel.png" CssClass="PokemonImage"/><br />
-                <div class="pokemonName">Sneasel</div>
+                <asp:Image runat="server" AlternateText="Masquerain" ImageUrl="~/Image/Masquerain.png" CssClass="PokemonImage"/><br />
+                <div class="pokemonName">Masquerain</div>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCell">
                 10981
@@ -304,8 +287,8 @@
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
                 <%-- Image of Pokemons--%>
-                <asp:Image runat="server" AlternateText="Misdreavus" ImageUrl="~/Image/Misdreavus.png" CssClass="PokemonImage"/><br />
-                <div class="pokemonName">Misdreavus</div>
+                <asp:Image runat="server" AlternateText="Combee" ImageUrl="~/Image/Combee.png" CssClass="PokemonImage"/><br />
+                <div class="pokemonName">Combee</div>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCell">
                 10038
@@ -319,8 +302,8 @@
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
                 <%-- Image of Pokemons--%>
-                <asp:Image runat="server" AlternateText="Sableye" ImageUrl="~/Image/Sableye.png" CssClass="PokemonImage"/><br />
-                <div class="pokemonName">Sableye</div>
+                <asp:Image runat="server" AlternateText="Pineco" ImageUrl="~/Image/Pineco.png" CssClass="PokemonImage"/><br />
+                <div class="pokemonName">Pineco</div>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCell">
                 8132
@@ -330,40 +313,11 @@
             <asp:TableCell CssClass="TableCell">
                 <%-- Manually Setting Image--%>
                 <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
-                <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
                 <%-- Image of Pokemons--%>
-                <asp:Image runat="server" AlternateText="Alolan Exeggutor" ImageUrl="~/Image/Alolan_Exeggutor.png" CssClass="PokemonImage"/><br />
-                <div class="pokemonName">Alolan Exeggutor</div>
-            </asp:TableCell>
-            <asp:TableCell CssClass="TableCell">
-                13472
-            </asp:TableCell>
-        </asp:TableRow>
-        <asp:TableRow>
-            <asp:TableCell CssClass="TableCell">
-                <%-- Manually Setting Image--%>
-                <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
-            </asp:TableCell>
-            <asp:TableCell CssClass="TableCellMiddle">
-                <%-- Image of Pokemons--%>
-                <asp:Image runat="server" AlternateText="Snorunt" ImageUrl="~/Image/Snorunt.png" CssClass="PokemonImage"/><br />
-                <div class="pokemonName">Snorunt</div>
-            </asp:TableCell>
-            <asp:TableCell CssClass="TableCell">
-                2825
-            </asp:TableCell>
-        </asp:TableRow>
-        <asp:TableRow>
-            <asp:TableCell CssClass="TableCell">
-                <%-- Manually Setting Image--%>
-                <asp:Image runat="server" AlternateText="Raid Tiers" ImageAlign="Left" ImageUrl="~/Image/Raid.png" CssClass="Raid"/>
-            </asp:TableCell>
-            <asp:TableCell CssClass="TableCellMiddle">
-                <%-- Image of Pokemons--%>
-                <asp:Image runat="server" AlternateText="Drifloon" ImageUrl="~/Image/Drifloon.png" CssClass="PokemonImage"/><br />
-                <div class="pokemonName">Drifloon</div>
+                <asp:Image runat="server" AlternateText="Kricketot" ImageUrl="~/Image/Kricketot.png" CssClass="PokemonImage"/><br />
+                <div class="pokemonName">Kricketot</div>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCell">
                 3151
@@ -376,8 +330,8 @@
             </asp:TableCell>
             <asp:TableCell CssClass="TableCellMiddle">
                 <%-- Image of Pokemons--%>
-                <asp:Image runat="server" AlternateText="Bagon" ImageUrl="~/Image/Bagon.png" CssClass="PokemonImage"/><br />
-                <div class="pokemonName">Bagon</div>
+                <asp:Image runat="server" AlternateText="Caterpie" ImageUrl="~/Image/Caterpie.png" CssClass="PokemonImage"/><br />
+                <div class="pokemonName">Caterpie</div>
             </asp:TableCell>
             <asp:TableCell CssClass="TableCell">
                 3792
