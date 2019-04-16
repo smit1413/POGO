@@ -77,5 +77,14 @@ namespace ProjectMeowth
                 bootStrapRow.Controls.Add(cardWrapper);
             });
         }
+
+        protected void btnSave_Click(object sender, EventArgs e)
+        {
+            //
+            //foo[0].querySelector("[data-speciesID]").getAttribute("data-speciesID")
+            List<HtmlGenericControl> foo = PokedexGrid.FindDescendants<HtmlGenericControl>().ToList();
+            foo = foo.Where(x => x.Attributes["imgChked"] != null).ToList();
+            foo.ForEach(x => pnlTest.Controls.Add(x));
+        }
     }
 }

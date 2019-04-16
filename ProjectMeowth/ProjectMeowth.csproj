@@ -1569,6 +1569,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\AccountHelper.cs" />
+    <Compile Include="Helpers\HtmlControlsHelper.cs" />
     <Compile Include="Leaderboards.aspx.cs">
       <DependentUpon>Leaderboards.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
