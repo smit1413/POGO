@@ -34,7 +34,7 @@
             <div class="col-md-10">
                 <asp:DropDownList ID="TeamDropdown" runat="server" CssClass="form-control">
                     <asp:ListItem text="(No Team)" value="1"></asp:ListItem>
-                    <asp:ListItem Text="Mythic" Value="2"></asp:ListItem>
+                    <asp:ListItem Text="Mystic" Value="2"></asp:ListItem>
                     <asp:ListItem Text="Instinct" Value="3"></asp:ListItem>
                     <asp:ListItem Text="Valor" Value="4"></asp:ListItem>
                 </asp:DropDownList>
