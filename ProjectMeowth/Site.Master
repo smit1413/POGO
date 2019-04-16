@@ -97,6 +97,7 @@
                             <button id="instinctBtn" class="dropdown-item h3">Instinct</button>
                             <button id="mysticBtn" class="dropdown-item h3">Mystic</button>
                             <button id="valorBtn" class="dropdown-item h3">Valor</button>
+                            <button id="btnBlankBackground" class="dropdown-item h3">None</button>
                         </div>
                     </div>
                     <h4 class="text-muted">&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</h4>

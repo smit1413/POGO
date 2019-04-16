@@ -22,6 +22,11 @@
             setBackground(themeName);
             break;
 
+        case "none":
+            themeName = 'blank-bg';
+            setBackground(themeName);
+            break;
+
         //case "default":
         default:
             themeName = 'trio-bg2';
@@ -50,6 +55,13 @@
         setBackground(themeName);
     });
 
+    $('#btnBlankBackground').click(function (e) {
+        e.preventDefault();
+        localStorage.setItem('theme', 'none');
+        themeName = 'blank-bg';
+        setBackground(themeName);
+    });
+
     $('#defaultBtn').click(function (e) {
         e.preventDefault();
         localStorage.setItem('theme', 'default');
@@ -58,6 +70,10 @@
     });
 
     function setBackground(themeName) {
-        $('body').css('background-image', 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Content/Images/' + themeName + '.png")');
+        if (themeName == 'blank-bg') {
+            $('body').css('background', '#B4E1D9');
+        } else {
+            $('body').css('background-image', 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Content/Images/' + themeName + '.png")');
+        }
     }
 });
