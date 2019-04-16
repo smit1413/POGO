@@ -3,7 +3,6 @@
 <asp:Content ID="HeaderPokedex" ContentPlaceHolderID="HeadContent" runat="server">
     <style>
         .grid-item { /*width: 25%;*/ background-color: lightblue; }
-        
     </style>
     <link rel="stylesheet" href="jquery.lazyloadxt.spinner.css">
 </asp:Content>
@@ -11,7 +10,7 @@
 <asp:Content ID="BodyContentPokedex" ContentPlaceHolderID="MainContent" runat="server">
     <h3>You have reached the - <%: Title %> page.</h3>
      
-    <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click"/>
+    <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" Visible="false"/>
     <asp:Panel ID="pnlTest" runat="server"></asp:Panel>
     <div class="container">
         <div id="btnFilters">
