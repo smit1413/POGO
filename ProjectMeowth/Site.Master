@@ -13,7 +13,11 @@
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/POGOGAKKO.ico" rel="shortcut icon" type="image/x-icon" />
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
     <form runat="server">
@@ -23,7 +27,6 @@
                 <%--Framework Scripts--%>
                 <asp:ScriptReference Name="MsAjaxBundle" />
                 <asp:ScriptReference Name="jquery" />
-                <asp:ScriptReference Name="bootstrap" />
                 <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
                 <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
                 <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
@@ -33,57 +36,69 @@
                 <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
                 <asp:ScriptReference Name="WebFormsBundle" />
+                <asp:ScriptReference Path="~/Scripts/homepage.js" />
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
+    
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/"><span ID="logo"><span class="pokemon"><i></i> </span> </span>POGO Gakkō</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        
-                    </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/">Home</a></li>
-                                <li><a runat="server" href="~/Pokedex">Pokédex</a></li>
-                                <li><a runat="server" href="~/Trades">Trades</a></li>
-                                <li><a runat="server" href="~/Raids">Raids</a></li>
-                                <li><a runat="server" href="~/Leaderboards">Leaderboards</a></li>
-                                <li><a runat="server" href="~/MyProfile">Profile</a></li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
-                                <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                </li>
-                            </ul>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
-                </div>
+        <nav class="navbar clearfix">
+            <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="navbar-brand" runat="server" href="~/"><?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path style="fill:#303C42;" d="M256,0C114.844,0,0,114.844,0,256s114.844,256,256,256s256-114.844,256-256S397.156,0,256,0z"/><path style="fill:#E53935;" d="M256,21.333c121.508,0,221.715,92.837,233.483,211.299c-17.362,3.845-61.466,11.878-127.904,12.608	c-5.484-53.704-50.452-95.908-105.579-95.908s-100.095,42.203-105.579,95.908c-66.438-0.73-110.542-8.763-127.904-12.608	C34.285,114.171,134.492,21.333,256,21.333z"/><circle style="fill:#455A64;" cx="256" cy="256" r="85.333"/><path style="fill:#FFFFFF;" d="M256,490.667C126.604,490.667,21.333,385.396,21.333,256c0-0.596,0.086-1.171,0.09-1.766	c20.31,4.324,64.224,11.547,128.97,12.251c5.357,53.837,50.385,96.181,105.607,96.181s100.25-42.344,105.607-96.181	c64.746-0.704,108.66-7.927,128.97-12.251c0.004,0.595,0.09,1.169,0.09,1.766C490.667,385.396,385.396,490.667,256,490.667z"/><circle style="fill:#303C42;" cx="256" cy="256" r="64"/><circle style="fill:#F2F2F2;" cx="256" cy="256" r="42.667"/><path style="opacity:0.2;fill:#FFFFFF;enable-background:new    ;" d="M221.777,268.888c0-23.531,19.135-42.667,42.667-42.667	c12.215,0,23.169,5.224,30.954,13.475c-6.418-15.456-21.643-26.363-39.398-26.363c-23.531,0-42.667,19.135-42.667,42.667	c0,11.316,4.501,21.548,11.712,29.191C222.957,280.163,221.777,274.664,221.777,268.888z"/><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-45.5784" y1="639.555" x2="-23.8278" y2="629.4138" gradientTransform="matrix(21.3333 0 0 -21.3333 996.3334 13791.667)">	<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.2"/>	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/></linearGradient><path style="fill:url(#SVGID_1_);" d="M256,0C114.844,0,0,114.844,0,256s114.844,256,256,256s256-114.844,256-256S397.156,0,256,0z"	/><path style="opacity:0.1;enable-background:new    ;" d="M444.74,239.997c21.049-2.556,36.18-5.467,44.743-7.365	c-5.801-58.395-33.158-110.496-73.897-148.387C436.051,119.059,448,159.449,448,202.667C448,215.4,446.702,227.809,444.74,239.997z"	/><path style="opacity:0.1;enable-background:new    ;" d="M490.577,254.234c-10.544,2.245-27.586,5.257-50.467,7.747	C413.73,362.698,322.204,437.333,213.333,437.333c-61.789,0-117.908-24.186-159.859-63.361	C94.217,443.637,169.635,490.667,256,490.667c129.396,0,234.667-105.271,234.667-234.667	C490.667,255.404,490.581,254.829,490.577,254.234z"/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>POGO Gakkō</a>  -->               </div>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <asp:LoginView runat="server" ViewStateMode="Disabled">
+                    <AnonymousTemplate>
+                        <ul class="navMain">
+                            <li class="nav-item"><a class="h3 nav-link" runat="server" href="~/">Home</a></li>
+                            <li class="nav-item"><a class="h3 nav-link" runat="server" href="~/Pokedex">Pokédex</a></li>
+                            <li class="nav-item"><a class="h3 nav-link" runat="server" href="~/Trades">Trades</a></li>
+                            <li class="nav-item"><a class="h3 nav-link" runat="server" href="~/Raids">Raids</a></li>
+                            <li class="nav-item"><a class="h3 nav-link" runat="server" href="~/Leaderboards">Leaderboards</a></li>
+                            <li class="nav-item"><a class="h3 nav-link" runat="server" href="~/MyProfile">Profile</a></li>
+                            <li class="nav-item">
+                                
+                            </li>
+                        </ul>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <ul class="">
+                            <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                            <li>
+                                <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                            </li>
+                        </ul>
+                    </LoggedInTemplate>
+                </asp:LoginView>
             </div>
-        </div>
+        </nav>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
-            <footer>
-                <a runat="server" href="~/About">About</a>
-                <a runat="server" href="~/Contact">Contact</a>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+            <footer class="footer">
+                <div class="container">
+                    <a runat="server" class="h4 text-muted" href="~/About">About</a>
+                    <a runat="server" class="h4 text-muted" href="~/Contact">Contact</a>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="h3">Theme</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <button id="defaultBtn" class="dropdown-item h3">Default</button>
+                            <button id="instinctBtn" class="dropdown-item h3">Instinct</button>
+                            <button id="mysticBtn" class="dropdown-item h3">Mystic</button>
+                            <button id="valorBtn" class="dropdown-item h3">Valor</button>
+                        </div>
+                    </div>
+                    <h4 class="text-muted">&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</h4>
+                </div>                
             </footer>
         </div>
     </form>
 </body>
 </html>
+
