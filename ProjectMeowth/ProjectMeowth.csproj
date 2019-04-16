@@ -1406,6 +1406,9 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Image\Dialga.png" />
+    <Content Include="Image\Raid.png" />
+    <Content Include="Image\Tyranitar.png" />
     <Content Include="Leaderboards.aspx" />
     <Content Include="MyProfile.aspx" />
     <Content Include="POGOGAKKO.ico" />
