@@ -5,11 +5,13 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Owin;
 using ProjectMeowth.Models;
+using System.Data.SqlClient;
 
 namespace ProjectMeowth.Account
 {
     public partial class Login : Page
     {
+        private string connectionString = @"Data Source=DESKTOP-3O49TB0;Initial Catalog=userreg;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         protected void Page_Load(object sender, EventArgs e)
         {
             RegisterHyperLink.NavigateUrl = "Register";
@@ -44,7 +46,7 @@ namespace ProjectMeowth.Account
                         Response.Redirect("/Account/Lockout");
                         break;
                     case SignInStatus.RequiresVerification:
-                        Response.Redirect(String.Format("/Account/TwoFactorAuthenticationSignIn?ReturnUrl={0}&RememberMe={1}", 
+                        Response.Redirect(String.Format("/Account/TwoFactorAuthenticationSignIn?ReturnUrl={0}&RememberMe={1}",
                                                         Request.QueryString["ReturnUrl"],
                                                         RememberMe.Checked),
                                           true);
@@ -56,6 +58,32 @@ namespace ProjectMeowth.Account
                         break;
                 }
             }
+        }
+
+        public void LogInUser(string username, string password)
+        {
+            string dbUSerName = string.Empty;
+            string dbPassword = string.Empty;
+            using (var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                var sql = "select top 1 from reg where email = " + username + " and password = " + password;
+                using (var cmd = new SqlCommand(sql, connection))
+                {
+                    using (SqlDataReader reader = com.ExecuteReader())
+                    {
+                        if (reader != null)
+                        {
+                            while (reader.Read())
+                            {
+                                dbUSerName = Convert.ToString(reader["email"]);
+                                dbPassword = Convert.ToString(reader["password"]);
+                            }
+                        }
+                    }
+                }
+            }
+
         }
     }
 }
