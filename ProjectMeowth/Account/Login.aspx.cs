@@ -70,7 +70,7 @@ namespace ProjectMeowth.Account
                 var sql = "select top 1 from reg where email = " + username + " and password = " + password;
                 using (var cmd = new SqlCommand(sql, connection))
                 {
-                    using (SqlDataReader reader = com.ExecuteReader())
+                    using (SqlDataReader reader = cmd.ExecuteReader())
                     {
                         if (reader != null)
                         {
