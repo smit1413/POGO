@@ -1392,6 +1392,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="ErrorPages\UnderConstruction.html" />
+    <Content Include="Image\StevePkmTrainer.png" />
     <Content Include="pogogakko.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
