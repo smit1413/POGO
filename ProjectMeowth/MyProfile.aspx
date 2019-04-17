@@ -123,10 +123,12 @@
         }
         .avatar img{
             image-rendering: optimizeQuality;
-            max-width: 95%;
+            max-width: 85%;
             transform: scale(1.1);
             position: relative;
-            max-height: 95%;
+            max-height: 85%;
+            margin-left: 10px;
+            margin-top: 7px;
         }
         .achievements {
             height: 80px;
@@ -246,7 +248,7 @@
                <div id="content" class="container">
                     <div id="leftPanel" class="panel">
                         <div class="avatar">
-                            <img src="Image/StevePkmTrainer.png" />
+                            <img src="Content/Images/POGOGAKKONew.png" />
                         </div>
                         <hr />
                         <span>Trainer Name: Alex</span>
