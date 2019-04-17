@@ -62,7 +62,7 @@
                     <li class="nav-item"><a class="h3 nav-link" runat="server" href="~/Raids">Raids</a></li>
                     <li class="nav-item"><a class="h3 nav-link" runat="server" href="~/Leaderboards">Leaderboards</a></li>
                     <li class="nav-item"><a class="h3 nav-link" runat="server" href="~/MyProfile">Profile</a></li>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                <asp:LoginView runat="server" ViewStateMode="Disabled">
                     <AnonymousTemplate>
                     </AnonymousTemplate>
                     <LoggedInTemplate>
