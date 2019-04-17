@@ -253,13 +253,13 @@ background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
                             <img src="Content/Images/POGOGAKKONew.png" />
                         </div>
                         <hr />
-                        <span>Trainer Name: Alex</span>
+                        <span>Trainer Name: <%: PlayerName %></span>
                         <hr />
-                        <span>Lvl: 25</span>
+                        <span>Lvl: <%: Level %></span>
                         <hr />
-                        <span>Experience: 250000</span>
+                        <span>Experience: <%: GameExperience %></span>
                         <hr />
-                        <span>Team: Mystic</span>
+                        <span>Team: <%: TeamName %></span>
                         <hr />
                         <button>Add</button>
                     </div>

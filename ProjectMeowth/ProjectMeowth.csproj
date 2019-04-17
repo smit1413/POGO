@@ -1627,6 +1627,19 @@
     <Compile Include="Leaderboards.aspx.designer.cs">
       <DependentUpon>Leaderboards.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903290328498_InitialCreate.cs" />
+    <Compile Include="Migrations\201903290328498_InitialCreate.Designer.cs">
+      <DependentUpon>201903290328498_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904170529542_PlayerName.cs" />
+    <Compile Include="Migrations\201904170529542_PlayerName.Designer.cs">
+      <DependentUpon>201904170529542_PlayerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904171804049_GameExpNullable.cs" />
+    <Compile Include="Migrations\201904171804049_GameExpNullable.Designer.cs">
+      <DependentUpon>201904171804049_GameExpNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\PokedexFakeGenerator.cs" />
     <Compile Include="Models\PokemonModel.cs" />
@@ -1681,6 +1694,17 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201903290328498_InitialCreate.resx">
+      <DependentUpon>201903290328498_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904170529542_PlayerName.resx">
+      <DependentUpon>201904170529542_PlayerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904171804049_GameExpNullable.resx">
+      <DependentUpon>201904171804049_GameExpNullable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
