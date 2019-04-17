@@ -59,7 +59,7 @@ namespace ProjectMeowth.Account
                 }
             }
         }
-
+        /*
         public void LogInUser(string username, string password)
         {
             string dbUSerName = string.Empty;
@@ -85,5 +85,6 @@ namespace ProjectMeowth.Account
             }
 
         }
+        */
     }
 }
