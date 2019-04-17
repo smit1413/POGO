@@ -10,9 +10,14 @@ using ProjectMeowth.Models;
 
 namespace ProjectMeowth.Models
 {
+    // Customize & Expand the User Identity Profile
     // You can add User data for the user by adding more properties to your User class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
     {
+        public String PlayerName { get; set; }
+        public String Team { get; set; }
+        public int GameExperience { get; set; }
+
         public ClaimsIdentity GenerateUserIdentity(ApplicationUserManager manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
