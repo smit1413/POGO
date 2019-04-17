@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="Manage Password" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ManagePassword.aspx.cs" Inherits="ProjectMeowth.Account.ManagePassword" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
     <div class="form-horizontal">
         <section id="passwordForm">
             <asp:PlaceHolder runat="server" ID="setPassword" Visible="false">
@@ -47,7 +46,9 @@
             </asp:PlaceHolder>
 
             <asp:PlaceHolder runat="server" ID="changePasswordHolder" Visible="false">
-                <div class="form-horizontal">
+                <div class="form-div">
+                    <h2><%: Title %>.</h2>
+
                     <h4>Change Password Form</h4>
                     <hr />
                     <asp:ValidationSummary runat="server" ShowModelStateErrors="true" CssClass="text-danger" />

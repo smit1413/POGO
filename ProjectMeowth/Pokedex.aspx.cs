@@ -23,8 +23,8 @@ namespace ProjectMeowth
             PokedexFakeGenerator generator = new PokedexFakeGenerator();
             List<PokemonModel> lstPokemon = generator.GetFakePokedex();
 
-            HtmlGenericControl bootStrapRow = new HtmlGenericControl();
-            bootStrapRow.Attributes.Add("class", "row  align-items-center");
+            HtmlGenericControl bootStrapRow = new HtmlGenericControl("div");
+            bootStrapRow.Attributes.Add("class", "row align-items-center");
 
             PokedexGrid.Controls.Add(bootStrapRow);
 
@@ -34,20 +34,20 @@ namespace ProjectMeowth
             {
                 string customClass = "Generation-" + x.Generation.ToString() + " " + x.PokemonType;
 
-                HtmlGenericControl cardWrapper = new HtmlGenericControl();
-                cardWrapper.Attributes.Add("class", "card border-info col-sm-3 col-md-2 col-lg-1 grid-item " + customClass);
+                HtmlGenericControl cardWrapper = new HtmlGenericControl("div");
+                cardWrapper.Attributes.Add("class", "card border-info col-sm-3 col-md-4  col-lg-2 grid-item " + customClass);
                 
                 // Due to jQuery.imgCheckbox, cards are getting overlapped on each other, so we need to add margin-bottom for the label.
                 cardWrapper.Attributes.Add("style", "margin-bottom: 3%; min-height: 110px;");
 
-                HtmlGenericControl cardContents = new HtmlGenericControl();
+                HtmlGenericControl cardContents = new HtmlGenericControl("div");
                 cardContents.Attributes.Add("class", "pokemonCard");
                 
 
-                HtmlGenericControl cardBody = new HtmlGenericControl();
+                HtmlGenericControl cardBody = new HtmlGenericControl("div");
                 cardBody.Attributes.Add("class", "card-body");
 
-                HtmlGenericControl cardImage = new HtmlGenericControl();
+                HtmlGenericControl cardImage = new HtmlGenericControl("div");
                 cardImage.Attributes.Add("class", "card-img-top mx-auto");
                 //cardImage.Attributes.Add("style", "min-height: 100px");
                 cardImage.Attributes.Add("data-speciesid", "SpeciesID-" + x.SpeciesID);
