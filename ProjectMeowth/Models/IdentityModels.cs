@@ -16,13 +16,18 @@ namespace ProjectMeowth.Models
     {
         public String PlayerName { get; set; }
         public String Team { get; set; }
-        public int GameExperience { get; set; }
+        public int? GameExperience { get; set; }
 
         public ClaimsIdentity GenerateUserIdentity(ApplicationUserManager manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
             var userIdentity = manager.CreateIdentity(this, DefaultAuthenticationTypes.ApplicationCookie);
+
             // Add custom user claims here
+            userIdentity.AddClaim(new Claim("PlayerName", PlayerName));
+            userIdentity.AddClaim(new Claim("TeamName", Team));
+            userIdentity.AddClaim(new Claim("Exp", GameExperience.ToString()));
+
             return userIdentity;
         }
 

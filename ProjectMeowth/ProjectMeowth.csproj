@@ -1635,6 +1635,10 @@
     <Compile Include="Migrations\201904170529542_PlayerName.Designer.cs">
       <DependentUpon>201904170529542_PlayerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904171804049_GameExpNullable.cs" />
+    <Compile Include="Migrations\201904171804049_GameExpNullable.Designer.cs">
+      <DependentUpon>201904171804049_GameExpNullable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\PokedexFakeGenerator.cs" />
@@ -1697,6 +1701,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904170529542_PlayerName.resx">
       <DependentUpon>201904170529542_PlayerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904171804049_GameExpNullable.resx">
+      <DependentUpon>201904171804049_GameExpNullable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
