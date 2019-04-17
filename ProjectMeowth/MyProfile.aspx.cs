@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectMeowth.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,9 +10,6 @@ namespace ProjectMeowth
 {
     public partial class MyProfile : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

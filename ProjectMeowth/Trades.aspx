@@ -9,4 +9,5 @@
         }
     </style>
 <h1>COMING SOON!</h1>
+    <asp:Panel ID="tmpPanel" runat="server"></asp:Panel>
 </asp:Content>
