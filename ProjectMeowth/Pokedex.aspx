@@ -4,7 +4,7 @@
     <style>
         .grid-item { /*width: 25%;*/ background-color: lightblue; }
     </style>
-    <link rel="stylesheet" href="jquery.lazyloadxt.spinner.css">
+    <link rel="stylesheet" href="/Content/jquery.lazyloadxt.spinner.min.css">
 </asp:Content>
 
 <asp:Content ID="BodyContentPokedex" ContentPlaceHolderID="MainContent" runat="server">
