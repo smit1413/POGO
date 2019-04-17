@@ -60,7 +60,8 @@
             margin-top: 50px;
         }
         #leftPanel{
-            background:  linear-gradient(to bottom, rgba(255,0,0,1) 0%, rgba(143,2,34,1) 44%, rgba(255,255,255,1) 100%);
+            background-color: #FFE53B;
+background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
             width: 20%;
             height: 310px;
             color: lightgray;
@@ -71,7 +72,8 @@
         #rightPanel{
             width: 60%;
             height: 450px;
-            background:  linear-gradient(to bottom, rgba(255,0,0,1) 0%, rgba(143,2,34,1) 44%, rgba(255,255,255,1) 100%);
+            background-color: #FFE53B;
+background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
             margin-left: 218px;
             margin-bottom: 0;
             padding-bottom:0;
