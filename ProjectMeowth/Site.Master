@@ -62,22 +62,17 @@
                     <li class="nav-item"><a class="h3 nav-link" runat="server" href="~/Raids">Raids</a></li>
                     <li class="nav-item"><a class="h3 nav-link" runat="server" href="~/Leaderboards">Leaderboards</a></li>
                     <li class="nav-item"><a class="h3 nav-link" runat="server" href="~/MyProfile">Profile</a></li>
-                    <li class="nav-item">
-                                
-                    </li>
-                </ul>
-                <asp:LoginView runat="server" ViewStateMode="Disabled">
+                    <asp:LoginView runat="server" ViewStateMode="Disabled">
                     <AnonymousTemplate>
                     </AnonymousTemplate>
                     <LoggedInTemplate>
-                        <ul class="">
-                            <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
-                            <li>
-                                <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                            </li>
-                        </ul>
+                        <li class="nav-item">
+                            <asp:LoginStatus runat="server" CssClass="h3 nav-link" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                        </li>
                     </LoggedInTemplate>
                 </asp:LoginView>
+                </ul>
+
             </div>
         </nav>
         <div class="container body-content">
@@ -100,6 +95,13 @@
                             <button id="btnBlankBackground" class="dropdown-item h3">None</button>
                         </div>
                     </div>
+                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                    <AnonymousTemplate>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <h3 class="text-mutedd">Logged in as: <a class="h3 text-mutedd" runat="server" href="~/Account/Manage" title="Manage your account"><%: Context.User.Identity.GetUserName()  %></a> </h3>
+                    </LoggedInTemplate>
+                </asp:LoginView>
                     <h3 class="text-mutedd">&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</h3>
                 </div>                
             </footer>

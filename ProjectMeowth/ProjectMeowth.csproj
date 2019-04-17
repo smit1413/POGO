@@ -1375,7 +1375,6 @@
     <Content Include="Content\img\pokemon\substitute.png" />
     <Content Include="Content\jquery.lazyloadxt.fadein.min.css" />
     <Content Include="Content\jquery.lazyloadxt.spinner.min.css" />
-    <Content Include="Content\homepage.css" />
     <Content Include="Content\Images\bg-image.jpg" />
     <Content Include="Content\Images\bg-image1.jpg" />
     <Content Include="Content\Images\bg-image2.jpg" />
