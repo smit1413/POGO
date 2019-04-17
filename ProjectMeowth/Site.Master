@@ -86,8 +86,8 @@
             <hr />
             <footer class="footer">
                 <div class="container">
-                    <a runat="server" class="h4 text-muted" href="~/About">About</a>
-                    <a runat="server" class="h4 text-muted" href="~/Contact">Contact</a>
+                    <a runat="server" class="h4 text-mutedd" href="~/About">About</a>
+                    <a runat="server" class="h4 text-mutedd" href="~/Contact">Contact</a>
                     <div class="dropdown">
                         <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="h3">Theme</span>
@@ -100,7 +100,7 @@
                             <button id="btnBlankBackground" class="dropdown-item h3">None</button>
                         </div>
                     </div>
-                    <h4 class="text-muted">&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</h4>
+                    <h3 class="text-mutedd">&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</h3>
                 </div>                
             </footer>
         </div>

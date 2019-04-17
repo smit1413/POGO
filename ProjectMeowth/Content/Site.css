@@ -1,4 +1,8 @@
 ﻿/* Move down content because we have a fixed navbar that is 50px tall */
+
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Open Sans', sans-serif !important;
     /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/trio-bg2.png");*/
@@ -32,6 +36,28 @@ body {
     padding: 20px;
 }
 
+h3, h2, p, label {
+    color: #FFF;
+}
+
+.text-mutedd {
+    color: #FFF !important;
+}
+
+h4 {
+    font-size: 2.92rem !important; 
+    line-height: 110% !important;
+}
+
+.form-div {
+    background-color: #FFF;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.form-div label, h2 {
+    color: black;
+}
 
 
 a.h3 {
@@ -48,6 +74,10 @@ a.h3 {
 nav.navbar {
     background-color: transparent;
     border: none!important;
+}
+
+body {
+    background-attachment: fixed;
 }
 
 .footer {

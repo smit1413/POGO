@@ -1,11 +1,62 @@
 ﻿<%@ Page Title="My Profile" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MyProfile.aspx.cs" Inherits="ProjectMeowth.MyProfile" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:Panel ID="unauthorizedUser" runat="server" Visible="true">
+
+    <style>
+        .button {
+            display: inline-block;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 25px;
+            line-height: 1.5;
+            border-radius: .25rem;
+            transition: opacity .15s ease;
+            color: #fff;
+            background-color: #FF9742;
+            border-color: #FF9742;
+            width: 50%;
+            opacity: 0.9;
+        }
+
+        .button a {
+            text-decoration: none;
+        }
+
+        .button:hover {
+            color: #fff;
+            opacity: 1;
+        }
+
+        .button:hover a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        #MainContent_unauthorizedUser {
+            text-align: center;
+        }
+
+    </style>
+
+    <asp:Panel ID="unauthorizedUser" runat="server" Visible="true" CssClass="form-div">
         <h2>Please Log in, or Register</h2>
         <br />
-            <h3><a href="Account/Login.aspx">Log In</a></h3>
-            <h3><a href="Account/Register.aspx">Register</a></h3><br />
+            <h3>
+                <a class="button" href="Account/Login.aspx">Log In</a>
+            </h3>
+
+            <h3>
+                <a class="button" href="Account/Register.aspx">Register</a>
+            </h3>
+        <br />
 
         
     </asp:Panel>

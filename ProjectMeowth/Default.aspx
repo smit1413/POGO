@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ProjectMeowth._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <style>
+        .card-text h4 {
+            font-size: 1.75rem !important;
+        }
+    </style>
     
     <div class="container">
         <div class="row">
