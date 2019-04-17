@@ -2,41 +2,79 @@
 
 <asp:Content ID="HeaderPokedex" ContentPlaceHolderID="HeadContent" runat="server">
     <style>
-        .grid-item { /*width: 25%;*/ background-color: lightblue; }
+        .card-title {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .card {
+            margin: 5px;
+        }
+
+        label {
+            font-size: 15px !important;
+            font-weight: 100;
+            color: #fff;
+        }
+
+        .btn {
+            font-size: 15px !important;
+        }
+
+        .pokemonImage {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .grid {
+            text-align: center;
+        }
+
+        .bar input {
+            font-size: 13px !important;
+        }
+
+        h3 {
+            font-size: 1.9rem !important;
+            color: #f2f2f2;
+        }
+
+
     </style>
-    <link rel="stylesheet" href="jquery.lazyloadxt.spinner.css">
+    <link rel="stylesheet" href="/Content/jquery.lazyloadxt.spinner.min.css">
 </asp:Content>
 
 <asp:Content ID="BodyContentPokedex" ContentPlaceHolderID="MainContent" runat="server">
     <h3>You have reached the - <%: Title %> page.</h3>
-     
-    <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" Visible="false"/>
-    <asp:Panel ID="pnlTest" runat="server"></asp:Panel>
+    
+    <asp:LoginView ID="vwSavedSelection" runat="server" Visible="false">
+        <LoggedInTemplate>
+            <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click"/>
+            <asp:Panel ID="pnlTest" runat="server"></asp:Panel>
+        </LoggedInTemplate>
+    </asp:LoginView>
+    
     <div class="container">
         <div id="btnFilters">
             <div class="btn-toolbar button-group filter-button-group" data-filter-group="region">
-                <label class="col-sm-2 col-form-label">Generation: </label>
+                <label>Generation: </label>
                 <div class="col-sm-10">
-                <div class="btn-group btn-group-sm">
-
-                    <!-- NOTE: You must NOT use the button tag here, since it triggers a postback in ASP.NET & resets the filter -->
-                    <input type="button" class="btn btn-success" data-filter="*" value="Show All" />
-                </div>
-                <div class="btn-group btn-group-sm">
-                    <input type="button" class="btn btn-success" data-filter=".Generation-1" value="1" Title="Kanto" />
-                    <input type="button" class="btn btn-success" data-filter=".Generation-2" value="2" Title="Johto" />
-                    <input type="button" class="btn btn-success" data-filter=".Generation-3" value="3" Title="Hoenn" />
-                    <input type="button" class="btn btn-success" data-filter=".Generation-4" value="4" Title="Sinnoh" />
-                    <input type="button" class="btn btn-success" data-filter=".Generation-5" value="5" Title="Unova" />
-                    <input type="button" class="btn btn-success" data-filter=".Generation-6" value="6" Title="Kalos" />
-                    <input type="button" class="btn btn-success" data-filter=".Generation-7" value="7" Title="Alola" />
-                </div>
+                    <div class="btn-group btn-group-sm">
+                        <input type="button" class="btn btn-success" data-filter="*" value="Show All" />
+                        <input type="button" class="btn btn-success" data-filter=".Generation-1" value="1" Title="Kanto" />
+                        <input type="button" class="btn btn-success" data-filter=".Generation-2" value="2" Title="Johto" />
+                        <input type="button" class="btn btn-success" data-filter=".Generation-3" value="3" Title="Hoenn" />
+                        <input type="button" class="btn btn-success" data-filter=".Generation-4" value="4" Title="Sinnoh" />
+                        <input type="button" class="btn btn-success" data-filter=".Generation-5" value="5" Title="Unova" />
+                        <input type="button" class="btn btn-success" data-filter=".Generation-6" value="6" Title="Kalos" />
+                        <input type="button" class="btn btn-success" data-filter=".Generation-7" value="7" Title="Alola" />
                     </div>
+                </div>
             </div>
 
             <div style="padding-top: 1%"></div>
 
-            <div class="btn-group btn-group-sm button-group" data-filter-group="type">
+            <div class="btn-group btn-group-sm button-group bar" data-filter-group="type">
 
                 <!-- NOTE: You must NOT use the button tag here, since it triggers a postback in ASP.NET & resets the filter -->
                 <input type="button" class="btn btn-info" data-filter="*" value="Show All" />
@@ -65,8 +103,7 @@
 
         <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
             <ContentTemplate>
-                <div id="PokedexGrid" class="grid" runat="server">
-                </div>
+                <div id="PokedexGrid" class="grid row" runat="server" />
             </ContentTemplate>
         </asp:UpdatePanel>
             

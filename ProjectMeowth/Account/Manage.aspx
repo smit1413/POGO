@@ -3,16 +3,31 @@
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
 
-    <div>
-        <asp:PlaceHolder runat="server" ID="successMessage" Visible="false" ViewStateMode="Disabled">
-            <p class="text-success"><%: SuccessMessage %></p>
-        </asp:PlaceHolder>
-    </div>
+    <style>
+        a {
+            color: #ffab40;
+            text-transform: uppercase;
+            transition: color .3s ease;
+            font-size: 15px !important;
+        }
 
-    <div class="row">
+        dt, p, dd {
+            font-size: 16px;
+        }
+
+
+    </style>
+
+    <div class="row form-div">
         <div class="col-md-12">
+            <div>
+                <h2><%: Title %>.</h2>
+
+                <asp:PlaceHolder runat="server" ID="successMessage" Visible="false" ViewStateMode="Disabled">
+                    <p class="text-success"><%: SuccessMessage %></p>
+                </asp:PlaceHolder>
+            </div>
             <div class="form-horizontal">
                 <h4>Change your account settings</h4>
                 <hr />

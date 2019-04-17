@@ -40,7 +40,7 @@
             color: #fff;
         }
 
-        #MainContent_unauthorizedUser {
+        .form-div {
             text-align: center;
         }
         #friendsList{
