@@ -116,6 +116,7 @@ background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
         }
         #leftPanel span{
             color: black;
+            font-size: 15px;
             margin-top: 20px;
             margin-left: 15px;
         }
