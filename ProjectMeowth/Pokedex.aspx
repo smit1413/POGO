@@ -46,9 +46,14 @@
 
 <asp:Content ID="BodyContentPokedex" ContentPlaceHolderID="MainContent" runat="server">
     <h3>You have reached the - <%: Title %> page.</h3>
-     
-    <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" Visible="false"/>
-    <asp:Panel ID="pnlTest" runat="server"></asp:Panel>
+    
+    <asp:LoginView ID="vwSavedSelection" runat="server" Visible="false">
+        <LoggedInTemplate>
+            <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click"/>
+            <asp:Panel ID="pnlTest" runat="server"></asp:Panel>
+        </LoggedInTemplate>
+    </asp:LoginView>
+    
     <div class="container">
         <div id="btnFilters">
             <div class="btn-toolbar button-group filter-button-group" data-filter-group="region">

@@ -13,22 +13,13 @@ namespace ProjectMeowth {
     public partial class Pokedex {
         
         /// <summary>
-        /// btnSave control.
+        /// vwSavedSelection control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSave;
-        
-        /// <summary>
-        /// pnlTest control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlTest;
+        protected global::System.Web.UI.WebControls.LoginView vwSavedSelection;
         
         /// <summary>
         /// UpdatePanel1 control.

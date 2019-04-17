@@ -49,7 +49,6 @@ namespace ProjectMeowth
 
                 HtmlGenericControl cardImage = new HtmlGenericControl("div");
                 cardImage.Attributes.Add("class", "card-img-top mx-auto");
-                //cardImage.Attributes.Add("style", "min-height: 100px");
                 cardImage.Attributes.Add("data-speciesid", "SpeciesID-" + x.SpeciesID);
 
                 HtmlImage img = new HtmlImage();
@@ -80,10 +79,14 @@ namespace ProjectMeowth
 
         protected void btnSave_Click(object sender, EventArgs e)
         {
+            return;
+
             //
             //foo[0].querySelector("[data-speciesID]").getAttribute("data-speciesID")
             List<HtmlGenericControl> foo = PokedexGrid.FindDescendants<HtmlGenericControl>().ToList();
             foo = foo.Where(x => x.Attributes["imgChked"] != null).ToList();
+
+            Panel pnlTest = (Panel)vwSavedSelection.FindControl("pnlTest");
             foo.ForEach(x => pnlTest.Controls.Add(x));
         }
     }
