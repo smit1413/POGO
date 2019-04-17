@@ -2,9 +2,18 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <style>
-        .card-text h4 {
+        h4 {
             font-size: 1.75rem !important;
         }
+
+        h3 {
+            font-size: 1.65rem !important;
+        }
+
+        p {
+            font-size: 1.5rem !important;
+        }
+
     </style>
     
     <div class="container">
