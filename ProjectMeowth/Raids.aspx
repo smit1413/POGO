@@ -169,6 +169,9 @@
                 <asp:TableHeaderCell CssClass="TableHeader">
                     Boss CP
                 </asp:TableHeaderCell>
+                <asp:TableHeaderCell CssClass="TableHeader">
+                    Weaknesses
+                </asp:TableHeaderCell>
             </asp:TableHeaderRow>
             <asp:TableRow>
                 <asp:TableCell CssClass="TableCell">
@@ -186,6 +189,9 @@
                 </asp:TableCell>
                 <asp:TableCell CssClass="TableCell">
                     34987
+                </asp:TableCell>
+                <asp:TableCell CssClass="TableCell">
+                    Dark, Ice, Dragon, Fairy, Ghost
                 </asp:TableCell>
             </asp:TableRow>
                     <asp:TableRow>
@@ -205,6 +211,9 @@
                 <asp:TableCell CssClass="TableCell">
                     33018
                 </asp:TableCell>
+                <asp:TableCell CssClass="TableCell">
+                    Bug, Dark, Ghost
+                </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
                 <asp:TableCell CssClass="TableCell">
@@ -221,6 +230,9 @@
                 </asp:TableCell>
                 <asp:TableCell CssClass="TableCell">
                     26262
+                </asp:TableCell>
+                <asp:TableCell CssClass="TableCell">
+                    Ground, Fighting, Bug, Grass, Fairy, Steel, Water
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
@@ -239,6 +251,9 @@
                 <asp:TableCell CssClass="TableCell">
                     26262
                 </asp:TableCell>
+                <asp:TableCell CssClass="TableCell">
+                    Fighting, Bug, Fairy
+                </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
                 <asp:TableCell CssClass="TableCell">
@@ -255,6 +270,9 @@
                 </asp:TableCell>
                 <asp:TableCell CssClass="TableCell">
                     18671
+                </asp:TableCell>
+                <asp:TableCell CssClass="TableCell">
+                    Ice, Electric, Rock, Flying, Fire
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
@@ -273,6 +291,9 @@
                 <asp:TableCell CssClass="TableCell">
                     19522
                 </asp:TableCell>
+                <asp:TableCell CssClass="TableCell">
+                    Water, Rock, Ground, Ghost, Dark
+                </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
                 <asp:TableCell CssClass="TableCell">
@@ -288,6 +309,9 @@
                 </asp:TableCell>
                 <asp:TableCell CssClass="TableCell">
                     17990
+                </asp:TableCell>
+                <asp:TableCell CssClass="TableCell">
+                    Psychic, Fairy, Flying
                 </asp:TableCell>
             </asp:TableRow>
                     <asp:TableRow>
@@ -305,6 +329,9 @@
                 <asp:TableCell CssClass="TableCell">
                     13278
                 </asp:TableCell>
+                <asp:TableCell CssClass="TableCell">
+                    Flying, Ice, Electric, Rock, Fire
+                </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
                 <asp:TableCell CssClass="TableCell">
@@ -320,6 +347,9 @@
                 </asp:TableCell>
                 <asp:TableCell CssClass="TableCell">
                     15023
+                </asp:TableCell>
+                <asp:TableCell CssClass="TableCell">
+                    Flying, Rock, Fire
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
@@ -337,6 +367,9 @@
                 <asp:TableCell CssClass="TableCell">
                     19359
                 </asp:TableCell>
+                <asp:TableCell CssClass="TableCell">
+                    Water, Rock, Steel
+                </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
                 <asp:TableCell CssClass="TableCell">
@@ -353,6 +386,9 @@
                 <asp:TableCell CssClass="TableCell">
                     15380
                 </asp:TableCell>
+                <asp:TableCell CssClass="TableCell">
+                    Dark, Ground, Ghost, Bug
+                </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
                 <asp:TableCell CssClass="TableCell">
@@ -367,6 +403,9 @@
                 </asp:TableCell>
                 <asp:TableCell CssClass="TableCell">
                     10981
+                </asp:TableCell>
+                <asp:TableCell CssClass="TableCell">
+                    Ice, Electric, Rock, Flying, Fire
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
@@ -383,6 +422,9 @@
                 <asp:TableCell CssClass="TableCell">
                     9008
                 </asp:TableCell>
+                <asp:TableCell CssClass="TableCell">
+                    Ground, Fire
+                </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
                 <asp:TableCell CssClass="TableCell">
@@ -397,6 +439,9 @@
                 </asp:TableCell>
                 <asp:TableCell CssClass="TableCell">
                     10038
+                </asp:TableCell>
+                <asp:TableCell CssClass="TableCell">
+                    Ice, Electric, Rock, Flying, Fire
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
@@ -413,6 +458,9 @@
                 <asp:TableCell CssClass="TableCell">
                     8132
                 </asp:TableCell>
+                <asp:TableCell CssClass="TableCell">
+                    Rock, Flying, Fire
+                </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
                 <asp:TableCell CssClass="TableCell">
@@ -426,6 +474,9 @@
                 </asp:TableCell>
                 <asp:TableCell CssClass="TableCell">
                     3151
+                </asp:TableCell>
+                <asp:TableCell CssClass="TableCell">
+                    Rock, Flying, Fire
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
@@ -441,6 +492,9 @@
                 <asp:TableCell CssClass="TableCell">
                     3792
                 </asp:TableCell>
+                <asp:TableCell CssClass="TableCell">
+                    Rock, Flying, Fire
+                </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
                 <asp:TableCell CssClass="TableCell">
@@ -454,6 +508,9 @@
                 </asp:TableCell>
                 <asp:TableCell CssClass="TableCell">
                     2873
+                </asp:TableCell>
+                <asp:TableCell CssClass="TableCell">
+                    Ground
                 </asp:TableCell>
             </asp:TableRow>
 
