@@ -22,24 +22,6 @@ namespace ProjectMeowth {
         protected global::System.Web.UI.WebControls.Panel unauthorizedUser;
         
         /// <summary>
-        /// loginUser control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel loginUser;
-        
-        /// <summary>
-        /// registerUser control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel registerUser;
-        
-        /// <summary>
         /// authorizedUser control.
         /// </summary>
         /// <remarks>

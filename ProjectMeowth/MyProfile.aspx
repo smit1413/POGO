@@ -60,13 +60,7 @@
 
         
     </asp:Panel>
-    <asp:Panel ID="loginUser" runat="server" Visible="false">
-
-    </asp:Panel>
-    <asp:Panel ID="registerUser" runat="server" Visible="false">
- 
-    </asp:Panel>
-    <asp:Panel ID="authorizedUser" runat="server" Visible="false">
+<asp:Panel ID="authorizedUser" runat="server" Visible="false">
         <div id="mainButtonWrap" class="text-center">
             <asp:Button id="updateDetailsBtn" CssClass="btn" Text="Edit" runat="server"/>
             <a href="logout.aspx" id="logoutBtn" class="btn">Logout</a>
