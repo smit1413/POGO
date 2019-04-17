@@ -261,7 +261,7 @@
                     </div>
                    <div id="rightPanel" class="panel">
                        <div class="trainerCard">
-                           <h1>POGO GAKKO</h1>
+                           <h1>POGO GAKKŌ</h1>
                            <span>Trainer Card</span>
                        </div>
                        <div id="topPokemon">
