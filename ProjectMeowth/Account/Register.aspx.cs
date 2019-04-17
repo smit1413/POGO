@@ -27,7 +27,7 @@ namespace ProjectMeowth.Account
             int parsedExp = -1;
             int.TryParse(Experience.Text, out parsedExp);
             var user = new ApplicationUser() {
-                UserName = TrainerName.Text,
+                UserName = Email.Text,
                 Email = Email.Text,
                 PlayerName = TrainerName.Text,
                 Team = TeamDropdown.SelectedItem.Text,

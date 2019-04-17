@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectMeowth.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -30,5 +31,6 @@ namespace ProjectMeowth.Helpers
 
             return userName;
         }
+
     }
 }
