@@ -253,7 +253,7 @@
                         <hr />
                         <span>Trainer Name: <%: PlayerName %></span>
                         <hr />
-                        <span>Lvl: 41</span>
+                        <span>Lvl: <%: Level %></span>
                         <hr />
                         <span>Experience: <%: GameExperience %></span>
                         <hr />
